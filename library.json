@@ -4,7 +4,7 @@
     "name": "Amen Brother",
     "cropStart": 0,
     "cropEnd": 1,
-    "numSlices": 8,
+    "numSlices": 16,
     "numSteps": 16
   },
   {
@@ -20,7 +20,7 @@
     "name": "Think (About It)",
     "cropStart": 0,
     "cropEnd": 1,
-    "numSlices": 8,
+    "numSlices": 16,
     "numSteps": 16
   },
   {
@@ -28,7 +28,7 @@
     "name": "Pants",
     "cropStart": 0,
     "cropEnd": 1,
-    "numSlices": 8,
+    "numSlices": 16,
     "numSteps": 16
   },
   {
@@ -36,7 +36,7 @@
     "name": "Five",
     "cropStart": 0,
     "cropEnd": 1,
-    "numSlices": 8,
+    "numSlices": 16,
     "numSteps": 16
   }
 ]
