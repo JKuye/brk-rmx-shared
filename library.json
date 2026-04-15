@@ -1,0 +1,42 @@
+[
+  {
+    "file": "breaks/Amen 1.wav",
+    "name": "Amen Brother",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 8,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/Apache 1.wav",
+    "name": "Apache",
+    "cropStart": 0.05,
+    "cropEnd": 0.95,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/Think.wav",
+    "name": "Think (About It)",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 8,
+    "numSteps": 16
+  }
+{
+    "file": "breaks/Hot Pants.wav",
+    "name": "Pants",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 8,
+    "numSteps": 16
+  }
+{
+    "file": "breaks/Five.wav",
+    "name": "Five",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 8,
+    "numSteps": 16
+  }
+]
