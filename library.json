@@ -22,16 +22,16 @@
     "cropEnd": 1,
     "numSlices": 8,
     "numSteps": 16
-  }
-{
+  },
+  {
     "file": "breaks/Hot Pants.wav",
     "name": "Pants",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 8,
     "numSteps": 16
-  }
-{
+  },
+  {
     "file": "breaks/Five.wav",
     "name": "Five",
     "cropStart": 0,
