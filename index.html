@@ -363,29 +363,24 @@ function App() {
     else if(rawBuffer) setAudioBuffer(rawBuffer);
   },[cropStart,cropEnd,rawBuffer]);
 
-  // Auto-save per-break settings (crop, slices, steps) for active user library item
-  useEffect(() => {
-    if (activeLibId == null) return;
-    const t = setTimeout(() => {
+  const [savedFlash, setSavedFlash] = useState(false);
+
+  const saveBreakState = useCallback(() => {
+    if (activeLibId != null) {
       dbUpdateBreakSettings(activeLibId, { cropStart, cropEnd, numSlices, numSteps })
         .then(() => {
           setLibrary(prev => prev.map(x => x.id === activeLibId
-            ? { ...x, cropStart, cropEnd, numSlices, numSteps }
-            : x));
+            ? { ...x, cropStart, cropEnd, numSlices, numSteps } : x));
+          setSavedFlash(true);
+          setTimeout(() => setSavedFlash(false), 1200);
         })
         .catch(e => console.error('Settings save failed:', e));
-    }, 500);
-    return () => clearTimeout(t);
-  }, [activeLibId, cropStart, cropEnd, numSlices, numSteps]);
-
-  // Auto-save crop/slice/step settings for active shared library item
-  useEffect(() => {
-    if (activeSharedId == null) return;
-    const t = setTimeout(() => {
+    } else if (activeSharedId != null) {
       saveSharedSettings(activeSharedId, { cropStart, cropEnd, numSlices, numSteps });
-    }, 500);
-    return () => clearTimeout(t);
-  }, [activeSharedId, cropStart, cropEnd, numSlices, numSteps]);
+      setSavedFlash(true);
+      setTimeout(() => setSavedFlash(false), 1200);
+    }
+  }, [activeLibId, activeSharedId, cropStart, cropEnd, numSlices, numSteps]);
 
   // ─── File handling (add to library + load) ───
   const handleFile = useCallback(async (e) => {
@@ -840,6 +835,15 @@ function App() {
               borderRadius:6,cursor:'pointer',fontSize:12,fontWeight:500,
             }}>
               {isPreviewing?'■ STOP':'▶ PREVIEW'}
+            </button>
+          )}
+          {(activeLibId != null || activeSharedId != null) && audioBuffer && (
+            <button onClick={saveBreakState} style={{
+              padding:'8px 14px',background:savedFlash?C.green:C.surface,
+              color:savedFlash?'#000':C.text,border:`1px solid ${savedFlash?C.green:C.border}`,
+              borderRadius:6,cursor:'pointer',fontSize:12,fontWeight:500,transition:'all 0.2s',
+            }}>
+              {savedFlash ? '✓ SAVED' : 'SAVE STATE'}
             </button>
           )}
           {fileName && <span style={{color:C.textDim,fontSize:12}}>{fileName}</span>}
