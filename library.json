@@ -1,6 +1,6 @@
 [
   {
-    "file": "breaks/Amen 1.wav",
+    "file": "breaks/0001.wav",
     "name": "Amen Brother",
     "cropStart": 0,
     "cropEnd": 1,
@@ -8,7 +8,7 @@
     "numSteps": 16
   },
   {
-    "file": "breaks/Apache 1.wav",
+    "file": "breaks/0002.wav",
     "name": "Apache",
     "cropStart": 0.05,
     "cropEnd": 0.95,
@@ -16,7 +16,487 @@
     "numSteps": 16
   },
   {
-    "file": "breaks/Think.wav",
+    "file": "breaks/0003.wav",
+    "name": "Breaks 02-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0004.wav",
+    "name": "Breaks 02-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0005.wav",
+    "name": "Breaks 02-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0006.wav",
+    "name": "Breaks 02-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0007.wav",
+    "name": "Breaks 02-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0008.wav",
+    "name": "Breaks 02-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0009.wav",
+    "name": "Breaks 02-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0010.wav",
+    "name": "Breaks 03-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0011.wav",
+    "name": "Breaks 03-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0012.wav",
+    "name": "Breaks 03-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0013.wav",
+    "name": "Breaks 03-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0014.wav",
+    "name": "Breaks 03-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0015.wav",
+    "name": "Breaks 03-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0016.wav",
+    "name": "Breaks 03-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0017.wav",
+    "name": "Breaks 03-08",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0018.wav",
+    "name": "Breaks 03-09",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0019.wav",
+    "name": "Breaks 03-10",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0020.wav",
+    "name": "Breaks 04-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0021.wav",
+    "name": "Breaks 04-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0022.wav",
+    "name": "Breaks 04-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0023.wav",
+    "name": "Breaks 04-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0024.wav",
+    "name": "Breaks 04-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0025.wav",
+    "name": "Breaks 04-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0026.wav",
+    "name": "Breaks 04-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0027.wav",
+    "name": "Breaks 05-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0028.wav",
+    "name": "Breaks 05-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0029.wav",
+    "name": "Breaks 05-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0030.wav",
+    "name": "Breaks 05-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0031.wav",
+    "name": "Breaks 05-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0032.wav",
+    "name": "Breaks 05-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0033.wav",
+    "name": "Breaks 05-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0034.wav",
+    "name": "Breaks 06-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0035.wav",
+    "name": "Breaks 06-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0036.wav",
+    "name": "Breaks 06-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0037.wav",
+    "name": "Breaks 06-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0038.wav",
+    "name": "Breaks 06-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0039.wav",
+    "name": "Breaks 06-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0040.wav",
+    "name": "Breaks 06-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0041.wav",
+    "name": "Breaks 06-08",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0042.wav",
+    "name": "Breaks 06-09",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0043.wav",
+    "name": "Breaks 07-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0044.wav",
+    "name": "Breaks 07-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0045.wav",
+    "name": "Breaks 07-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0046.wav",
+    "name": "Breaks 07-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0047.wav",
+    "name": "Breaks 07-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0048.wav",
+    "name": "Breaks 07-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0049.wav",
+    "name": "Breaks 07-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0050.wav",
+    "name": "Breaks 07-08",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0051.wav",
+    "name": "Breaks 08-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0052.wav",
+    "name": "Breaks 08-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0053.wav",
+    "name": "Breaks 08-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0054.wav",
+    "name": "Breaks 08-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0055.wav",
+    "name": "Breaks 08-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0056.wav",
+    "name": "Breaks 08-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0057.wav",
+    "name": "Breaks 08-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0058.wav",
+    "name": "Breaks 08-08",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0059.wav",
+    "name": "Breaks 08-09",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0060.wav",
+    "name": "Breaks 08-10",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0061.wav",
+    "name": "Five",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0062.wav",
+    "name": "Hot Pants",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0063.wav",
     "name": "Think (About It)",
     "cropStart": 0,
     "cropEnd": 1,
@@ -24,16 +504,2496 @@
     "numSteps": 16
   },
   {
-    "file": "breaks/Hot Pants.wav",
-    "name": "Pants",
+    "file": "breaks/0064.wav",
+    "name": "Adrift Break",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
     "numSteps": 16
   },
   {
-    "file": "breaks/Five.wav",
-    "name": "Five",
+    "file": "breaks/0065.wav",
+    "name": "Alzir Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0066.wav",
+    "name": "Angles Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0067.wav",
+    "name": "Apollo",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0068.wav",
+    "name": "Arson Fill",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0069.wav",
+    "name": "Atlantis Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0070.wav",
+    "name": "Back Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0071.wav",
+    "name": "Back Break 3",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0072.wav",
+    "name": "Back Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0073.wav",
+    "name": "Bad Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0074.wav",
+    "name": "Beep Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0075.wav",
+    "name": "Beta Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0076.wav",
+    "name": "Blaze Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0077.wav",
+    "name": "Blaze Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0078.wav",
+    "name": "Blue Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0079.wav",
+    "name": "Bonanza Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0080.wav",
+    "name": "Boo Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0081.wav",
+    "name": "Boo Worm Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0082.wav",
+    "name": "Bouncer Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0083.wav",
+    "name": "Box Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0084.wav",
+    "name": "Box Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0085.wav",
+    "name": "Box Break 3",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0086.wav",
+    "name": "Box Break 4",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0087.wav",
+    "name": "Box Break 5",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0088.wav",
+    "name": "Breaks 02-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0089.wav",
+    "name": "Breaks 02-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0090.wav",
+    "name": "Breaks 02-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0091.wav",
+    "name": "Breaks 02-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0092.wav",
+    "name": "Breaks 02-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0093.wav",
+    "name": "Breaks 02-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0094.wav",
+    "name": "Breaks 02-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0095.wav",
+    "name": "Breaks 03-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0096.wav",
+    "name": "Breaks 03-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0097.wav",
+    "name": "Breaks 03-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0098.wav",
+    "name": "Breaks 03-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0099.wav",
+    "name": "Breaks 03-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0100.wav",
+    "name": "Breaks 03-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0101.wav",
+    "name": "Breaks 04-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0102.wav",
+    "name": "Breaks 04-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0103.wav",
+    "name": "Breaks 04-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0104.wav",
+    "name": "Breaks 04-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0105.wav",
+    "name": "Breaks 04-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0106.wav",
+    "name": "Breaks 04-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0107.wav",
+    "name": "Breaks 04-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0108.wav",
+    "name": "Breaks 05-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0109.wav",
+    "name": "Breaks 05-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0110.wav",
+    "name": "Breaks 05-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0111.wav",
+    "name": "Breaks 05-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0112.wav",
+    "name": "Breaks 05-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0113.wav",
+    "name": "Breaks 05-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0114.wav",
+    "name": "Breaks 05-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0115.wav",
+    "name": "Breaks 06-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0116.wav",
+    "name": "Breaks 06-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0117.wav",
+    "name": "Breaks 06-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0118.wav",
+    "name": "Breaks 06-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0119.wav",
+    "name": "Breaks 06-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0120.wav",
+    "name": "Breaks 06-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0121.wav",
+    "name": "Breaks 06-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0122.wav",
+    "name": "Breaks 06-08",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0123.wav",
+    "name": "Breaks 07-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0124.wav",
+    "name": "Breaks 07-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0125.wav",
+    "name": "Breaks 07-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0126.wav",
+    "name": "Breaks 07-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0127.wav",
+    "name": "Breaks 07-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0128.wav",
+    "name": "Breaks 07-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0129.wav",
+    "name": "Breaks 07-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0130.wav",
+    "name": "Breaks 07-08",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0131.wav",
+    "name": "Breaks 08-01",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0132.wav",
+    "name": "Breaks 08-02",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0133.wav",
+    "name": "Breaks 08-03",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0134.wav",
+    "name": "Breaks 08-04",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0135.wav",
+    "name": "Breaks 08-05",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0136.wav",
+    "name": "Breaks 08-06",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0137.wav",
+    "name": "Breaks 08-07",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0138.wav",
+    "name": "Breaks 08-08",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0139.wav",
+    "name": "Breaks 08-09",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0140.wav",
+    "name": "Breaks 08-10",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0141.wav",
+    "name": "Breeze Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0142.wav",
+    "name": "Bringing Me Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0143.wav",
+    "name": "Bronx Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0144.wav",
+    "name": "Brut Force Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0145.wav",
+    "name": "Brut Force Fuller Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0146.wav",
+    "name": "Bulldozer Amen 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0147.wav",
+    "name": "Bulldozer Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0148.wav",
+    "name": "Calling Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0149.wav",
+    "name": "Calling Reverse Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0150.wav",
+    "name": "Camo Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0151.wav",
+    "name": "Careless Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0152.wav",
+    "name": "Centuries Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0153.wav",
+    "name": "Champion Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0154.wav",
+    "name": "Change Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0155.wav",
+    "name": "Check Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0156.wav",
+    "name": "Chopper Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0157.wav",
+    "name": "Connected Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0158.wav",
+    "name": "Control Amen 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0159.wav",
+    "name": "Control Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0160.wav",
+    "name": "Control Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0161.wav",
+    "name": "Control Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0162.wav",
+    "name": "Control Kick Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0163.wav",
+    "name": "Control Kicks",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0164.wav",
+    "name": "Control Stutter Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0165.wav",
+    "name": "Control Vocal Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0166.wav",
+    "name": "Cool Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0167.wav",
+    "name": "Cool Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0168.wav",
+    "name": "Cosmik Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0169.wav",
+    "name": "Cumulus Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0170.wav",
+    "name": "Darkside Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0171.wav",
+    "name": "Dayz Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0172.wav",
+    "name": "Desire Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0173.wav",
+    "name": "Detroit Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0174.wav",
+    "name": "Detroit Percussion",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0175.wav",
+    "name": "Difference Break 1",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0176.wav",
+    "name": "Difference Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0177.wav",
+    "name": "Dispatch Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0178.wav",
+    "name": "Dispatch Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0179.wav",
+    "name": "Drumz Amen Compound",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0180.wav",
+    "name": "Drumz Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0181.wav",
+    "name": "Effect Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0182.wav",
+    "name": "Effect Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0183.wav",
+    "name": "Effect Break 3",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0184.wav",
+    "name": "Enchanted Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0185.wav",
+    "name": "Essential Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0186.wav",
+    "name": "Fairlight Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0187.wav",
+    "name": "Firin Line Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0188.wav",
+    "name": "First Contact Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0189.wav",
+    "name": "Flutes Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0190.wav",
+    "name": "Fountain Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0191.wav",
+    "name": "Friday Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0192.wav",
+    "name": "Futureproof Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0193.wav",
+    "name": "Games Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0194.wav",
+    "name": "Gene Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0195.wav",
+    "name": "Gene Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0196.wav",
+    "name": "God Chord Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0197.wav",
+    "name": "Good Times Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0198.wav",
+    "name": "Gravitational Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0199.wav",
+    "name": "Groove Therapy Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0200.wav",
+    "name": "Guess Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0201.wav",
+    "name": "Haze Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0202.wav",
+    "name": "Haze Hybrid Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0203.wav",
+    "name": "Heaven Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0204.wav",
+    "name": "Heaven Carl Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0205.wav",
+    "name": "Heli Bongos",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0206.wav",
+    "name": "Heli Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0207.wav",
+    "name": "Horn Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0208.wav",
+    "name": "Hurt U So Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0209.wav",
+    "name": "Imagine Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0210.wav",
+    "name": "Inner Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0211.wav",
+    "name": "Intro Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0212.wav",
+    "name": "Jazz Note Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0213.wav",
+    "name": "Jazz Note Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0214.wav",
+    "name": "Jazz Thing Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0215.wav",
+    "name": "Jazzy Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0216.wav",
+    "name": "Johnny Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0217.wav",
+    "name": "Killa Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0218.wav",
+    "name": "Let Roll Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0219.wav",
+    "name": "Let There Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0220.wav",
+    "name": "Let There Stutter Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0221.wav",
+    "name": "Liberty Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0222.wav",
+    "name": "Lick Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0223.wav",
+    "name": "Lights Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0224.wav",
+    "name": "Limb Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0225.wav",
+    "name": "Links Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0226.wav",
+    "name": "Little Roller Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0227.wav",
+    "name": "London Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0228.wav",
+    "name": "Mach Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0229.wav",
+    "name": "Machines Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0230.wav",
+    "name": "Maintain Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0231.wav",
+    "name": "Marbles Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0232.wav",
+    "name": "Massive Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0233.wav",
+    "name": "Massive Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0234.wav",
+    "name": "Maximum Booty Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0235.wav",
+    "name": "Metropolis Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0236.wav",
+    "name": "Moths Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0237.wav",
+    "name": "Mutant Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0238.wav",
+    "name": "My Sound Break 1",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0239.wav",
+    "name": "My Sound Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0240.wav",
+    "name": "My Sound Break 3",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0241.wav",
+    "name": "Mystical Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0242.wav",
+    "name": "Mystique Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0243.wav",
+    "name": "Night Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0244.wav",
+    "name": "Night Compound Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0245.wav",
+    "name": "Oh Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0246.wav",
+    "name": "Overcast Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0247.wav",
+    "name": "Parallel World Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0248.wav",
+    "name": "Peace Sign Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0249.wav",
+    "name": "Pesh Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0250.wav",
+    "name": "Physical Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0251.wav",
+    "name": "Physical Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0252.wav",
+    "name": "Pin Up Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0253.wav",
+    "name": "Piper Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0254.wav",
+    "name": "Place Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0255.wav",
+    "name": "Playboy Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0256.wav",
+    "name": "Possible Worlds Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0257.wav",
+    "name": "Pressin Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0258.wav",
+    "name": "Prog Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0259.wav",
+    "name": "Prog Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0260.wav",
+    "name": "Promenade Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0261.wav",
+    "name": "Quest Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0262.wav",
+    "name": "Rainfall Lite Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0263.wav",
+    "name": "Reach Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0264.wav",
+    "name": "Reckon Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0265.wav",
+    "name": "Reel Funk Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0266.wav",
+    "name": "Reel Funk Roller",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0267.wav",
+    "name": "Reflections Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0268.wav",
+    "name": "Repetoire Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0269.wav",
+    "name": "Resolution Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0270.wav",
+    "name": "Revelation Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0271.wav",
+    "name": "Ricochet Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0272.wav",
+    "name": "Right Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0273.wav",
+    "name": "Rise Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0274.wav",
+    "name": "Rock Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0275.wav",
+    "name": "Rock Amen 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0276.wav",
+    "name": "Roll On Roll",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0277.wav",
+    "name": "Roll On Roll 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0278.wav",
+    "name": "Roll On Roll 3",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0279.wav",
+    "name": "Rumble Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0280.wav",
+    "name": "Searchin Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0281.wav",
+    "name": "Searchin Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0282.wav",
+    "name": "Searchin Break 3",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0283.wav",
+    "name": "Seatown Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0284.wav",
+    "name": "Secrets Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0285.wav",
+    "name": "Session Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0286.wav",
+    "name": "Shock Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0287.wav",
+    "name": "Shock Filter Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0288.wav",
+    "name": "Shoes Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0289.wav",
+    "name": "Sight Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0290.wav",
+    "name": "Sky Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0291.wav",
+    "name": "Solar Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0292.wav",
+    "name": "Sonic Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0293.wav",
+    "name": "Sonic Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0294.wav",
+    "name": "Sonic Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0295.wav",
+    "name": "Sound Control Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0296.wav",
+    "name": "Sound Murderer Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0297.wav",
+    "name": "Sovreign Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0298.wav",
+    "name": "Space Age Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0299.wav",
+    "name": "Stepper Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0300.wav",
+    "name": "Stepper Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0301.wav",
+    "name": "Still Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0302.wav",
+    "name": "Stone Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0303.wav",
+    "name": "Sunset Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0304.wav",
+    "name": "System Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0305.wav",
+    "name": "Take You Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0306.wav",
+    "name": "Tear Apache",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0307.wav",
+    "name": "Tear Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0308.wav",
+    "name": "Tear Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0309.wav",
+    "name": "Technology Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0310.wav",
+    "name": "Ten Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0311.wav",
+    "name": "Ten Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0312.wav",
+    "name": "Terrain Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0313.wav",
+    "name": "Terrain Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0314.wav",
+    "name": "Terrorist Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0315.wav",
+    "name": "Travelling Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0316.wav",
+    "name": "Trippin Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0317.wav",
+    "name": "Trippin Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0318.wav",
+    "name": "Tronik Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0319.wav",
+    "name": "True Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0320.wav",
+    "name": "Vapour Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0321.wav",
+    "name": "Voyage Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0322.wav",
+    "name": "Walk Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0323.wav",
+    "name": "Walk Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0324.wav",
+    "name": "Walk Break 3",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0325.wav",
+    "name": "War Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0326.wav",
+    "name": "WarPeace Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0327.wav",
+    "name": "Warhead Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0328.wav",
+    "name": "Warhead Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0329.wav",
+    "name": "Warned Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0330.wav",
+    "name": "Warning Compound",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0331.wav",
+    "name": "Warning Copter",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0332.wav",
+    "name": "Way Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0333.wav",
+    "name": "Wheel Up 2 Bad",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0334.wav",
+    "name": "Wheel Up Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0335.wav",
+    "name": "Worries Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0336.wav",
+    "name": "Your Amen",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0337.wav",
+    "name": "Your Amen 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0338.wav",
+    "name": "Your Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0339.wav",
+    "name": "Zone Break 2",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0340.wav",
+    "name": "Zone Break",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0341.wav",
+    "name": "Break 0341",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0342.wav",
+    "name": "Break 0342",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0343.wav",
+    "name": "Break 0343",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0344.wav",
+    "name": "Break 0344",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0345.wav",
+    "name": "Break 0345",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0346.wav",
+    "name": "Break 0346",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0347.wav",
+    "name": "Break 0347",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0348.wav",
+    "name": "Break 0348",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0349.wav",
+    "name": "Break 0349",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0350.wav",
+    "name": "Break 0350",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0351.wav",
+    "name": "Break 0351",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0352.wav",
+    "name": "Break 0352",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0353.wav",
+    "name": "Break 0353",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0354.wav",
+    "name": "Break 0354",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0355.wav",
+    "name": "Break 0355",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0356.wav",
+    "name": "Break 0356",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0357.wav",
+    "name": "Break 0357",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0358.wav",
+    "name": "Break 0358",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0359.wav",
+    "name": "Break 0359",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0360.wav",
+    "name": "Break 0360",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0361.wav",
+    "name": "Break 0361",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0362.wav",
+    "name": "Break 0362",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0363.wav",
+    "name": "Break 0363",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0364.wav",
+    "name": "Break 0364",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0365.wav",
+    "name": "Break 0365",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0366.wav",
+    "name": "Break 0366",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0367.wav",
+    "name": "Break 0367",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0368.wav",
+    "name": "Break 0368",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0369.wav",
+    "name": "Break 0369",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0370.wav",
+    "name": "Break 0370",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0371.wav",
+    "name": "Break 0371",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0372.wav",
+    "name": "Break 0372",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0373.wav",
+    "name": "Break 0373",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0374.wav",
+    "name": "Break 0374",
+    "cropStart": 0,
+    "cropEnd": 1,
+    "numSlices": 16,
+    "numSteps": 16
+  },
+  {
+    "file": "breaks/0375.wav",
+    "name": "Break 0375",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
