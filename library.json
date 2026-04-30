@@ -1,7 +1,7 @@
 [
   {
     "file": "breaks/0001.wav",
-    "name": "Amen Brother",
+    "name": "0001",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -9,15 +9,15 @@
   },
   {
     "file": "breaks/0002.wav",
-    "name": "Apache",
-    "cropStart": 0.05,
-    "cropEnd": 0.95,
+    "name": "0002",
+    "cropStart": 0,
+    "cropEnd": 1,
     "numSlices": 16,
     "numSteps": 16
   },
   {
     "file": "breaks/0003.wav",
-    "name": "Breaks 02-01",
+    "name": "0003",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -25,7 +25,7 @@
   },
   {
     "file": "breaks/0004.wav",
-    "name": "Breaks 02-02",
+    "name": "0004",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -33,7 +33,7 @@
   },
   {
     "file": "breaks/0005.wav",
-    "name": "Breaks 02-03",
+    "name": "0005",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -41,7 +41,7 @@
   },
   {
     "file": "breaks/0006.wav",
-    "name": "Breaks 02-04",
+    "name": "0006",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -49,7 +49,7 @@
   },
   {
     "file": "breaks/0007.wav",
-    "name": "Breaks 02-05",
+    "name": "0007",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -57,7 +57,7 @@
   },
   {
     "file": "breaks/0008.wav",
-    "name": "Breaks 02-06",
+    "name": "0008",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -65,7 +65,7 @@
   },
   {
     "file": "breaks/0009.wav",
-    "name": "Breaks 02-07",
+    "name": "0009",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -73,7 +73,7 @@
   },
   {
     "file": "breaks/0010.wav",
-    "name": "Breaks 03-01",
+    "name": "0010",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -81,7 +81,7 @@
   },
   {
     "file": "breaks/0011.wav",
-    "name": "Breaks 03-02",
+    "name": "0011",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -89,7 +89,7 @@
   },
   {
     "file": "breaks/0012.wav",
-    "name": "Breaks 03-03",
+    "name": "0012",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -97,7 +97,7 @@
   },
   {
     "file": "breaks/0013.wav",
-    "name": "Breaks 03-04",
+    "name": "0013",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -105,7 +105,7 @@
   },
   {
     "file": "breaks/0014.wav",
-    "name": "Breaks 03-05",
+    "name": "0014",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -113,7 +113,7 @@
   },
   {
     "file": "breaks/0015.wav",
-    "name": "Breaks 03-06",
+    "name": "0015",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -121,7 +121,7 @@
   },
   {
     "file": "breaks/0016.wav",
-    "name": "Breaks 03-07",
+    "name": "0016",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -129,7 +129,7 @@
   },
   {
     "file": "breaks/0017.wav",
-    "name": "Breaks 03-08",
+    "name": "0017",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -137,7 +137,7 @@
   },
   {
     "file": "breaks/0018.wav",
-    "name": "Breaks 03-09",
+    "name": "0018",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -145,7 +145,7 @@
   },
   {
     "file": "breaks/0019.wav",
-    "name": "Breaks 03-10",
+    "name": "0019",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -153,7 +153,7 @@
   },
   {
     "file": "breaks/0020.wav",
-    "name": "Breaks 04-01",
+    "name": "0020",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -161,7 +161,7 @@
   },
   {
     "file": "breaks/0021.wav",
-    "name": "Breaks 04-02",
+    "name": "0021",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -169,7 +169,7 @@
   },
   {
     "file": "breaks/0022.wav",
-    "name": "Breaks 04-03",
+    "name": "0022",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -177,7 +177,7 @@
   },
   {
     "file": "breaks/0023.wav",
-    "name": "Breaks 04-04",
+    "name": "0023",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -185,7 +185,7 @@
   },
   {
     "file": "breaks/0024.wav",
-    "name": "Breaks 04-05",
+    "name": "0024",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -193,7 +193,7 @@
   },
   {
     "file": "breaks/0025.wav",
-    "name": "Breaks 04-06",
+    "name": "0025",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -201,7 +201,7 @@
   },
   {
     "file": "breaks/0026.wav",
-    "name": "Breaks 04-07",
+    "name": "0026",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -209,7 +209,7 @@
   },
   {
     "file": "breaks/0027.wav",
-    "name": "Breaks 05-01",
+    "name": "0027",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -217,7 +217,7 @@
   },
   {
     "file": "breaks/0028.wav",
-    "name": "Breaks 05-02",
+    "name": "0028",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -225,7 +225,7 @@
   },
   {
     "file": "breaks/0029.wav",
-    "name": "Breaks 05-03",
+    "name": "0029",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -233,7 +233,7 @@
   },
   {
     "file": "breaks/0030.wav",
-    "name": "Breaks 05-04",
+    "name": "0030",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -241,7 +241,7 @@
   },
   {
     "file": "breaks/0031.wav",
-    "name": "Breaks 05-05",
+    "name": "0031",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -249,7 +249,7 @@
   },
   {
     "file": "breaks/0032.wav",
-    "name": "Breaks 05-06",
+    "name": "0032",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -257,7 +257,7 @@
   },
   {
     "file": "breaks/0033.wav",
-    "name": "Breaks 05-07",
+    "name": "0033",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -265,7 +265,7 @@
   },
   {
     "file": "breaks/0034.wav",
-    "name": "Breaks 06-01",
+    "name": "0034",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -273,7 +273,7 @@
   },
   {
     "file": "breaks/0035.wav",
-    "name": "Breaks 06-02",
+    "name": "0035",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -281,7 +281,7 @@
   },
   {
     "file": "breaks/0036.wav",
-    "name": "Breaks 06-03",
+    "name": "0036",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -289,7 +289,7 @@
   },
   {
     "file": "breaks/0037.wav",
-    "name": "Breaks 06-04",
+    "name": "0037",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -297,7 +297,7 @@
   },
   {
     "file": "breaks/0038.wav",
-    "name": "Breaks 06-05",
+    "name": "0038",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -305,7 +305,7 @@
   },
   {
     "file": "breaks/0039.wav",
-    "name": "Breaks 06-06",
+    "name": "0039",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -313,7 +313,7 @@
   },
   {
     "file": "breaks/0040.wav",
-    "name": "Breaks 06-07",
+    "name": "0040",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -321,7 +321,7 @@
   },
   {
     "file": "breaks/0041.wav",
-    "name": "Breaks 06-08",
+    "name": "0041",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -329,7 +329,7 @@
   },
   {
     "file": "breaks/0042.wav",
-    "name": "Breaks 06-09",
+    "name": "0042",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -337,7 +337,7 @@
   },
   {
     "file": "breaks/0043.wav",
-    "name": "Breaks 07-01",
+    "name": "0043",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -345,7 +345,7 @@
   },
   {
     "file": "breaks/0044.wav",
-    "name": "Breaks 07-02",
+    "name": "0044",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -353,7 +353,7 @@
   },
   {
     "file": "breaks/0045.wav",
-    "name": "Breaks 07-03",
+    "name": "0045",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -361,7 +361,7 @@
   },
   {
     "file": "breaks/0046.wav",
-    "name": "Breaks 07-04",
+    "name": "0046",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -369,7 +369,7 @@
   },
   {
     "file": "breaks/0047.wav",
-    "name": "Breaks 07-05",
+    "name": "0047",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -377,7 +377,7 @@
   },
   {
     "file": "breaks/0048.wav",
-    "name": "Breaks 07-06",
+    "name": "0048",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -385,7 +385,7 @@
   },
   {
     "file": "breaks/0049.wav",
-    "name": "Breaks 07-07",
+    "name": "0049",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -393,7 +393,7 @@
   },
   {
     "file": "breaks/0050.wav",
-    "name": "Breaks 07-08",
+    "name": "0050",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -401,7 +401,7 @@
   },
   {
     "file": "breaks/0051.wav",
-    "name": "Breaks 08-01",
+    "name": "0051",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -409,7 +409,7 @@
   },
   {
     "file": "breaks/0052.wav",
-    "name": "Breaks 08-02",
+    "name": "0052",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -417,7 +417,7 @@
   },
   {
     "file": "breaks/0053.wav",
-    "name": "Breaks 08-03",
+    "name": "0053",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -425,7 +425,7 @@
   },
   {
     "file": "breaks/0054.wav",
-    "name": "Breaks 08-04",
+    "name": "0054",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -433,7 +433,7 @@
   },
   {
     "file": "breaks/0055.wav",
-    "name": "Breaks 08-05",
+    "name": "0055",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -441,7 +441,7 @@
   },
   {
     "file": "breaks/0056.wav",
-    "name": "Breaks 08-06",
+    "name": "0056",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -449,7 +449,7 @@
   },
   {
     "file": "breaks/0057.wav",
-    "name": "Breaks 08-07",
+    "name": "0057",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -457,7 +457,7 @@
   },
   {
     "file": "breaks/0058.wav",
-    "name": "Breaks 08-08",
+    "name": "0058",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -465,7 +465,7 @@
   },
   {
     "file": "breaks/0059.wav",
-    "name": "Breaks 08-09",
+    "name": "0059",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -473,7 +473,7 @@
   },
   {
     "file": "breaks/0060.wav",
-    "name": "Breaks 08-10",
+    "name": "0060",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -481,7 +481,7 @@
   },
   {
     "file": "breaks/0061.wav",
-    "name": "Five",
+    "name": "0061",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -489,7 +489,7 @@
   },
   {
     "file": "breaks/0062.wav",
-    "name": "Hot Pants",
+    "name": "0062",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -497,7 +497,7 @@
   },
   {
     "file": "breaks/0063.wav",
-    "name": "Think (About It)",
+    "name": "0063",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -505,7 +505,7 @@
   },
   {
     "file": "breaks/0064.wav",
-    "name": "Adrift Break",
+    "name": "0064",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -513,7 +513,7 @@
   },
   {
     "file": "breaks/0065.wav",
-    "name": "Alzir Break",
+    "name": "0065",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -521,7 +521,7 @@
   },
   {
     "file": "breaks/0066.wav",
-    "name": "Angles Break",
+    "name": "0066",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -529,7 +529,7 @@
   },
   {
     "file": "breaks/0067.wav",
-    "name": "Apollo",
+    "name": "0067",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -537,7 +537,7 @@
   },
   {
     "file": "breaks/0068.wav",
-    "name": "Arson Fill",
+    "name": "0068",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -545,7 +545,7 @@
   },
   {
     "file": "breaks/0069.wav",
-    "name": "Atlantis Amen",
+    "name": "0069",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -553,7 +553,7 @@
   },
   {
     "file": "breaks/0070.wav",
-    "name": "Back Break 2",
+    "name": "0070",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -561,7 +561,7 @@
   },
   {
     "file": "breaks/0071.wav",
-    "name": "Back Break 3",
+    "name": "0071",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -569,7 +569,7 @@
   },
   {
     "file": "breaks/0072.wav",
-    "name": "Back Break",
+    "name": "0072",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -577,7 +577,7 @@
   },
   {
     "file": "breaks/0073.wav",
-    "name": "Bad Break",
+    "name": "0073",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -585,7 +585,7 @@
   },
   {
     "file": "breaks/0074.wav",
-    "name": "Beep Break",
+    "name": "0074",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -593,7 +593,7 @@
   },
   {
     "file": "breaks/0075.wav",
-    "name": "Beta Break",
+    "name": "0075",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -601,7 +601,7 @@
   },
   {
     "file": "breaks/0076.wav",
-    "name": "Blaze Break",
+    "name": "0076",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -609,7 +609,7 @@
   },
   {
     "file": "breaks/0077.wav",
-    "name": "Blaze Break 2",
+    "name": "0077",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -617,7 +617,7 @@
   },
   {
     "file": "breaks/0078.wav",
-    "name": "Blue Break",
+    "name": "0078",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -625,7 +625,7 @@
   },
   {
     "file": "breaks/0079.wav",
-    "name": "Bonanza Break",
+    "name": "0079",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -633,7 +633,7 @@
   },
   {
     "file": "breaks/0080.wav",
-    "name": "Boo Break",
+    "name": "0080",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -641,7 +641,7 @@
   },
   {
     "file": "breaks/0081.wav",
-    "name": "Boo Worm Break",
+    "name": "0081",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -649,7 +649,7 @@
   },
   {
     "file": "breaks/0082.wav",
-    "name": "Bouncer Break",
+    "name": "0082",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -657,7 +657,7 @@
   },
   {
     "file": "breaks/0083.wav",
-    "name": "Box Break",
+    "name": "0083",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -665,7 +665,7 @@
   },
   {
     "file": "breaks/0084.wav",
-    "name": "Box Break 2",
+    "name": "0084",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -673,7 +673,7 @@
   },
   {
     "file": "breaks/0085.wav",
-    "name": "Box Break 3",
+    "name": "0085",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -681,7 +681,7 @@
   },
   {
     "file": "breaks/0086.wav",
-    "name": "Box Break 4",
+    "name": "0086",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -689,7 +689,7 @@
   },
   {
     "file": "breaks/0087.wav",
-    "name": "Box Break 5",
+    "name": "0087",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -697,7 +697,7 @@
   },
   {
     "file": "breaks/0088.wav",
-    "name": "Breaks 02-01",
+    "name": "0088",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -705,7 +705,7 @@
   },
   {
     "file": "breaks/0089.wav",
-    "name": "Breaks 02-02",
+    "name": "0089",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -713,7 +713,7 @@
   },
   {
     "file": "breaks/0090.wav",
-    "name": "Breaks 02-03",
+    "name": "0090",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -721,7 +721,7 @@
   },
   {
     "file": "breaks/0091.wav",
-    "name": "Breaks 02-04",
+    "name": "0091",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -729,7 +729,7 @@
   },
   {
     "file": "breaks/0092.wav",
-    "name": "Breaks 02-05",
+    "name": "0092",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -737,7 +737,7 @@
   },
   {
     "file": "breaks/0093.wav",
-    "name": "Breaks 02-06",
+    "name": "0093",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -745,7 +745,7 @@
   },
   {
     "file": "breaks/0094.wav",
-    "name": "Breaks 02-07",
+    "name": "0094",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -753,7 +753,7 @@
   },
   {
     "file": "breaks/0095.wav",
-    "name": "Breaks 03-01",
+    "name": "0095",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -761,7 +761,7 @@
   },
   {
     "file": "breaks/0096.wav",
-    "name": "Breaks 03-02",
+    "name": "0096",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -769,7 +769,7 @@
   },
   {
     "file": "breaks/0097.wav",
-    "name": "Breaks 03-03",
+    "name": "0097",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -777,7 +777,7 @@
   },
   {
     "file": "breaks/0098.wav",
-    "name": "Breaks 03-04",
+    "name": "0098",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -785,7 +785,7 @@
   },
   {
     "file": "breaks/0099.wav",
-    "name": "Breaks 03-05",
+    "name": "0099",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -793,7 +793,7 @@
   },
   {
     "file": "breaks/0100.wav",
-    "name": "Breaks 03-06",
+    "name": "0100",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -801,7 +801,7 @@
   },
   {
     "file": "breaks/0101.wav",
-    "name": "Breaks 04-01",
+    "name": "0101",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -809,7 +809,7 @@
   },
   {
     "file": "breaks/0102.wav",
-    "name": "Breaks 04-02",
+    "name": "0102",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -817,7 +817,7 @@
   },
   {
     "file": "breaks/0103.wav",
-    "name": "Breaks 04-03",
+    "name": "0103",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -825,7 +825,7 @@
   },
   {
     "file": "breaks/0104.wav",
-    "name": "Breaks 04-04",
+    "name": "0104",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -833,7 +833,7 @@
   },
   {
     "file": "breaks/0105.wav",
-    "name": "Breaks 04-05",
+    "name": "0105",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -841,7 +841,7 @@
   },
   {
     "file": "breaks/0106.wav",
-    "name": "Breaks 04-06",
+    "name": "0106",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -849,7 +849,7 @@
   },
   {
     "file": "breaks/0107.wav",
-    "name": "Breaks 04-07",
+    "name": "0107",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -857,7 +857,7 @@
   },
   {
     "file": "breaks/0108.wav",
-    "name": "Breaks 05-01",
+    "name": "0108",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -865,7 +865,7 @@
   },
   {
     "file": "breaks/0109.wav",
-    "name": "Breaks 05-02",
+    "name": "0109",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -873,7 +873,7 @@
   },
   {
     "file": "breaks/0110.wav",
-    "name": "Breaks 05-03",
+    "name": "0110",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -881,7 +881,7 @@
   },
   {
     "file": "breaks/0111.wav",
-    "name": "Breaks 05-04",
+    "name": "0111",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -889,7 +889,7 @@
   },
   {
     "file": "breaks/0112.wav",
-    "name": "Breaks 05-05",
+    "name": "0112",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -897,7 +897,7 @@
   },
   {
     "file": "breaks/0113.wav",
-    "name": "Breaks 05-06",
+    "name": "0113",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -905,7 +905,7 @@
   },
   {
     "file": "breaks/0114.wav",
-    "name": "Breaks 05-07",
+    "name": "0114",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -913,7 +913,7 @@
   },
   {
     "file": "breaks/0115.wav",
-    "name": "Breaks 06-01",
+    "name": "0115",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -921,7 +921,7 @@
   },
   {
     "file": "breaks/0116.wav",
-    "name": "Breaks 06-02",
+    "name": "0116",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -929,7 +929,7 @@
   },
   {
     "file": "breaks/0117.wav",
-    "name": "Breaks 06-03",
+    "name": "0117",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -937,7 +937,7 @@
   },
   {
     "file": "breaks/0118.wav",
-    "name": "Breaks 06-04",
+    "name": "0118",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -945,7 +945,7 @@
   },
   {
     "file": "breaks/0119.wav",
-    "name": "Breaks 06-05",
+    "name": "0119",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -953,7 +953,7 @@
   },
   {
     "file": "breaks/0120.wav",
-    "name": "Breaks 06-06",
+    "name": "0120",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -961,7 +961,7 @@
   },
   {
     "file": "breaks/0121.wav",
-    "name": "Breaks 06-07",
+    "name": "0121",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -969,7 +969,7 @@
   },
   {
     "file": "breaks/0122.wav",
-    "name": "Breaks 06-08",
+    "name": "0122",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -977,7 +977,7 @@
   },
   {
     "file": "breaks/0123.wav",
-    "name": "Breaks 07-01",
+    "name": "0123",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -985,7 +985,7 @@
   },
   {
     "file": "breaks/0124.wav",
-    "name": "Breaks 07-02",
+    "name": "0124",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -993,7 +993,7 @@
   },
   {
     "file": "breaks/0125.wav",
-    "name": "Breaks 07-03",
+    "name": "0125",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1001,7 +1001,7 @@
   },
   {
     "file": "breaks/0126.wav",
-    "name": "Breaks 07-04",
+    "name": "0126",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1009,7 +1009,7 @@
   },
   {
     "file": "breaks/0127.wav",
-    "name": "Breaks 07-05",
+    "name": "0127",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1017,7 +1017,7 @@
   },
   {
     "file": "breaks/0128.wav",
-    "name": "Breaks 07-06",
+    "name": "0128",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1025,7 +1025,7 @@
   },
   {
     "file": "breaks/0129.wav",
-    "name": "Breaks 07-07",
+    "name": "0129",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1033,7 +1033,7 @@
   },
   {
     "file": "breaks/0130.wav",
-    "name": "Breaks 07-08",
+    "name": "0130",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1041,7 +1041,7 @@
   },
   {
     "file": "breaks/0131.wav",
-    "name": "Breaks 08-01",
+    "name": "0131",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1049,7 +1049,7 @@
   },
   {
     "file": "breaks/0132.wav",
-    "name": "Breaks 08-02",
+    "name": "0132",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1057,7 +1057,7 @@
   },
   {
     "file": "breaks/0133.wav",
-    "name": "Breaks 08-03",
+    "name": "0133",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1065,7 +1065,7 @@
   },
   {
     "file": "breaks/0134.wav",
-    "name": "Breaks 08-04",
+    "name": "0134",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1073,7 +1073,7 @@
   },
   {
     "file": "breaks/0135.wav",
-    "name": "Breaks 08-05",
+    "name": "0135",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1081,7 +1081,7 @@
   },
   {
     "file": "breaks/0136.wav",
-    "name": "Breaks 08-06",
+    "name": "0136",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1089,7 +1089,7 @@
   },
   {
     "file": "breaks/0137.wav",
-    "name": "Breaks 08-07",
+    "name": "0137",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1097,7 +1097,7 @@
   },
   {
     "file": "breaks/0138.wav",
-    "name": "Breaks 08-08",
+    "name": "0138",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1105,7 +1105,7 @@
   },
   {
     "file": "breaks/0139.wav",
-    "name": "Breaks 08-09",
+    "name": "0139",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1113,7 +1113,7 @@
   },
   {
     "file": "breaks/0140.wav",
-    "name": "Breaks 08-10",
+    "name": "0140",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1121,7 +1121,7 @@
   },
   {
     "file": "breaks/0141.wav",
-    "name": "Breeze Break",
+    "name": "0141",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1129,7 +1129,7 @@
   },
   {
     "file": "breaks/0142.wav",
-    "name": "Bringing Me Break",
+    "name": "0142",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1137,7 +1137,7 @@
   },
   {
     "file": "breaks/0143.wav",
-    "name": "Bronx Break",
+    "name": "0143",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1145,7 +1145,7 @@
   },
   {
     "file": "breaks/0144.wav",
-    "name": "Brut Force Break",
+    "name": "0144",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1153,7 +1153,7 @@
   },
   {
     "file": "breaks/0145.wav",
-    "name": "Brut Force Fuller Break",
+    "name": "0145",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1161,7 +1161,7 @@
   },
   {
     "file": "breaks/0146.wav",
-    "name": "Bulldozer Amen 2",
+    "name": "0146",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1169,7 +1169,7 @@
   },
   {
     "file": "breaks/0147.wav",
-    "name": "Bulldozer Amen",
+    "name": "0147",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1177,7 +1177,7 @@
   },
   {
     "file": "breaks/0148.wav",
-    "name": "Calling Break",
+    "name": "0148",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1185,7 +1185,7 @@
   },
   {
     "file": "breaks/0149.wav",
-    "name": "Calling Reverse Break",
+    "name": "0149",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1193,7 +1193,7 @@
   },
   {
     "file": "breaks/0150.wav",
-    "name": "Camo Break",
+    "name": "0150",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1201,7 +1201,7 @@
   },
   {
     "file": "breaks/0151.wav",
-    "name": "Careless Break",
+    "name": "0151",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1209,7 +1209,7 @@
   },
   {
     "file": "breaks/0152.wav",
-    "name": "Centuries Break",
+    "name": "0152",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1217,7 +1217,7 @@
   },
   {
     "file": "breaks/0153.wav",
-    "name": "Champion Break",
+    "name": "0153",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1225,7 +1225,7 @@
   },
   {
     "file": "breaks/0154.wav",
-    "name": "Change Break",
+    "name": "0154",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1233,7 +1233,7 @@
   },
   {
     "file": "breaks/0155.wav",
-    "name": "Check Break",
+    "name": "0155",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1241,7 +1241,7 @@
   },
   {
     "file": "breaks/0156.wav",
-    "name": "Chopper Break",
+    "name": "0156",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1249,7 +1249,7 @@
   },
   {
     "file": "breaks/0157.wav",
-    "name": "Connected Break",
+    "name": "0157",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1257,7 +1257,7 @@
   },
   {
     "file": "breaks/0158.wav",
-    "name": "Control Amen 2",
+    "name": "0158",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1265,7 +1265,7 @@
   },
   {
     "file": "breaks/0159.wav",
-    "name": "Control Amen",
+    "name": "0159",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1273,7 +1273,7 @@
   },
   {
     "file": "breaks/0160.wav",
-    "name": "Control Break",
+    "name": "0160",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1281,7 +1281,7 @@
   },
   {
     "file": "breaks/0161.wav",
-    "name": "Control Break 2",
+    "name": "0161",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1289,7 +1289,7 @@
   },
   {
     "file": "breaks/0162.wav",
-    "name": "Control Kick Break",
+    "name": "0162",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1297,7 +1297,7 @@
   },
   {
     "file": "breaks/0163.wav",
-    "name": "Control Kicks",
+    "name": "0163",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1305,7 +1305,7 @@
   },
   {
     "file": "breaks/0164.wav",
-    "name": "Control Stutter Break",
+    "name": "0164",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1313,7 +1313,7 @@
   },
   {
     "file": "breaks/0165.wav",
-    "name": "Control Vocal Break",
+    "name": "0165",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1321,7 +1321,7 @@
   },
   {
     "file": "breaks/0166.wav",
-    "name": "Cool Amen",
+    "name": "0166",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1329,7 +1329,7 @@
   },
   {
     "file": "breaks/0167.wav",
-    "name": "Cool Break",
+    "name": "0167",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1337,7 +1337,7 @@
   },
   {
     "file": "breaks/0168.wav",
-    "name": "Cosmik Break",
+    "name": "0168",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1345,7 +1345,7 @@
   },
   {
     "file": "breaks/0169.wav",
-    "name": "Cumulus Break",
+    "name": "0169",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1353,7 +1353,7 @@
   },
   {
     "file": "breaks/0170.wav",
-    "name": "Darkside Break",
+    "name": "0170",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1361,7 +1361,7 @@
   },
   {
     "file": "breaks/0171.wav",
-    "name": "Dayz Break",
+    "name": "0171",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1369,7 +1369,7 @@
   },
   {
     "file": "breaks/0172.wav",
-    "name": "Desire Break",
+    "name": "0172",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1377,7 +1377,7 @@
   },
   {
     "file": "breaks/0173.wav",
-    "name": "Detroit Break",
+    "name": "0173",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1385,7 +1385,7 @@
   },
   {
     "file": "breaks/0174.wav",
-    "name": "Detroit Percussion",
+    "name": "0174",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1393,7 +1393,7 @@
   },
   {
     "file": "breaks/0175.wav",
-    "name": "Difference Break 1",
+    "name": "0175",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1401,7 +1401,7 @@
   },
   {
     "file": "breaks/0176.wav",
-    "name": "Difference Break 2",
+    "name": "0176",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1409,7 +1409,7 @@
   },
   {
     "file": "breaks/0177.wav",
-    "name": "Dispatch Break",
+    "name": "0177",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1417,7 +1417,7 @@
   },
   {
     "file": "breaks/0178.wav",
-    "name": "Dispatch Break 2",
+    "name": "0178",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1425,7 +1425,7 @@
   },
   {
     "file": "breaks/0179.wav",
-    "name": "Drumz Amen Compound",
+    "name": "0179",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1433,7 +1433,7 @@
   },
   {
     "file": "breaks/0180.wav",
-    "name": "Drumz Amen",
+    "name": "0180",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1441,7 +1441,7 @@
   },
   {
     "file": "breaks/0181.wav",
-    "name": "Effect Break",
+    "name": "0181",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1449,7 +1449,7 @@
   },
   {
     "file": "breaks/0182.wav",
-    "name": "Effect Break 2",
+    "name": "0182",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1457,7 +1457,7 @@
   },
   {
     "file": "breaks/0183.wav",
-    "name": "Effect Break 3",
+    "name": "0183",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1465,7 +1465,7 @@
   },
   {
     "file": "breaks/0184.wav",
-    "name": "Enchanted Break",
+    "name": "0184",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1473,7 +1473,7 @@
   },
   {
     "file": "breaks/0185.wav",
-    "name": "Essential Break",
+    "name": "0185",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1481,7 +1481,7 @@
   },
   {
     "file": "breaks/0186.wav",
-    "name": "Fairlight Break",
+    "name": "0186",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1489,7 +1489,7 @@
   },
   {
     "file": "breaks/0187.wav",
-    "name": "Firin Line Break",
+    "name": "0187",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1497,7 +1497,7 @@
   },
   {
     "file": "breaks/0188.wav",
-    "name": "First Contact Amen",
+    "name": "0188",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1505,7 +1505,7 @@
   },
   {
     "file": "breaks/0189.wav",
-    "name": "Flutes Break",
+    "name": "0189",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1513,7 +1513,7 @@
   },
   {
     "file": "breaks/0190.wav",
-    "name": "Fountain Break",
+    "name": "0190",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1521,7 +1521,7 @@
   },
   {
     "file": "breaks/0191.wav",
-    "name": "Friday Break",
+    "name": "0191",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1529,7 +1529,7 @@
   },
   {
     "file": "breaks/0192.wav",
-    "name": "Futureproof Amen",
+    "name": "0192",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1537,7 +1537,7 @@
   },
   {
     "file": "breaks/0193.wav",
-    "name": "Games Amen",
+    "name": "0193",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1545,7 +1545,7 @@
   },
   {
     "file": "breaks/0194.wav",
-    "name": "Gene Break",
+    "name": "0194",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1553,7 +1553,7 @@
   },
   {
     "file": "breaks/0195.wav",
-    "name": "Gene Break 2",
+    "name": "0195",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1561,7 +1561,7 @@
   },
   {
     "file": "breaks/0196.wav",
-    "name": "God Chord Break",
+    "name": "0196",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1569,7 +1569,7 @@
   },
   {
     "file": "breaks/0197.wav",
-    "name": "Good Times Break",
+    "name": "0197",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1577,7 +1577,7 @@
   },
   {
     "file": "breaks/0198.wav",
-    "name": "Gravitational Break",
+    "name": "0198",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1585,7 +1585,7 @@
   },
   {
     "file": "breaks/0199.wav",
-    "name": "Groove Therapy Break",
+    "name": "0199",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1593,7 +1593,7 @@
   },
   {
     "file": "breaks/0200.wav",
-    "name": "Guess Break",
+    "name": "0200",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1601,7 +1601,7 @@
   },
   {
     "file": "breaks/0201.wav",
-    "name": "Haze Break",
+    "name": "0201",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1609,7 +1609,7 @@
   },
   {
     "file": "breaks/0202.wav",
-    "name": "Haze Hybrid Break",
+    "name": "0202",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1617,7 +1617,7 @@
   },
   {
     "file": "breaks/0203.wav",
-    "name": "Heaven Break",
+    "name": "0203",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1625,7 +1625,7 @@
   },
   {
     "file": "breaks/0204.wav",
-    "name": "Heaven Carl Break",
+    "name": "0204",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1633,7 +1633,7 @@
   },
   {
     "file": "breaks/0205.wav",
-    "name": "Heli Bongos",
+    "name": "0205",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1641,7 +1641,7 @@
   },
   {
     "file": "breaks/0206.wav",
-    "name": "Heli Break",
+    "name": "0206",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1649,7 +1649,7 @@
   },
   {
     "file": "breaks/0207.wav",
-    "name": "Horn Break",
+    "name": "0207",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1657,7 +1657,7 @@
   },
   {
     "file": "breaks/0208.wav",
-    "name": "Hurt U So Break",
+    "name": "0208",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1665,7 +1665,7 @@
   },
   {
     "file": "breaks/0209.wav",
-    "name": "Imagine Break",
+    "name": "0209",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1673,7 +1673,7 @@
   },
   {
     "file": "breaks/0210.wav",
-    "name": "Inner Break",
+    "name": "0210",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1681,7 +1681,7 @@
   },
   {
     "file": "breaks/0211.wav",
-    "name": "Intro Amen",
+    "name": "0211",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1689,7 +1689,7 @@
   },
   {
     "file": "breaks/0212.wav",
-    "name": "Jazz Note Break",
+    "name": "0212",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1697,7 +1697,7 @@
   },
   {
     "file": "breaks/0213.wav",
-    "name": "Jazz Note Break 2",
+    "name": "0213",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1705,7 +1705,7 @@
   },
   {
     "file": "breaks/0214.wav",
-    "name": "Jazz Thing Break",
+    "name": "0214",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1713,7 +1713,7 @@
   },
   {
     "file": "breaks/0215.wav",
-    "name": "Jazzy Break",
+    "name": "0215",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1721,7 +1721,7 @@
   },
   {
     "file": "breaks/0216.wav",
-    "name": "Johnny Amen",
+    "name": "0216",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1729,7 +1729,7 @@
   },
   {
     "file": "breaks/0217.wav",
-    "name": "Killa Break",
+    "name": "0217",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1737,7 +1737,7 @@
   },
   {
     "file": "breaks/0218.wav",
-    "name": "Let Roll Break",
+    "name": "0218",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1745,7 +1745,7 @@
   },
   {
     "file": "breaks/0219.wav",
-    "name": "Let There Break",
+    "name": "0219",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1753,7 +1753,7 @@
   },
   {
     "file": "breaks/0220.wav",
-    "name": "Let There Stutter Break",
+    "name": "0220",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1761,7 +1761,7 @@
   },
   {
     "file": "breaks/0221.wav",
-    "name": "Liberty Amen",
+    "name": "0221",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1769,7 +1769,7 @@
   },
   {
     "file": "breaks/0222.wav",
-    "name": "Lick Break",
+    "name": "0222",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1777,7 +1777,7 @@
   },
   {
     "file": "breaks/0223.wav",
-    "name": "Lights Break",
+    "name": "0223",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1785,7 +1785,7 @@
   },
   {
     "file": "breaks/0224.wav",
-    "name": "Limb Break",
+    "name": "0224",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1793,7 +1793,7 @@
   },
   {
     "file": "breaks/0225.wav",
-    "name": "Links Break",
+    "name": "0225",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1801,7 +1801,7 @@
   },
   {
     "file": "breaks/0226.wav",
-    "name": "Little Roller Amen",
+    "name": "0226",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1809,7 +1809,7 @@
   },
   {
     "file": "breaks/0227.wav",
-    "name": "London Break",
+    "name": "0227",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1817,7 +1817,7 @@
   },
   {
     "file": "breaks/0228.wav",
-    "name": "Mach Break",
+    "name": "0228",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1825,7 +1825,7 @@
   },
   {
     "file": "breaks/0229.wav",
-    "name": "Machines Break",
+    "name": "0229",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1833,7 +1833,7 @@
   },
   {
     "file": "breaks/0230.wav",
-    "name": "Maintain Break",
+    "name": "0230",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1841,7 +1841,7 @@
   },
   {
     "file": "breaks/0231.wav",
-    "name": "Marbles Break",
+    "name": "0231",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1849,7 +1849,7 @@
   },
   {
     "file": "breaks/0232.wav",
-    "name": "Massive Amen",
+    "name": "0232",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1857,7 +1857,7 @@
   },
   {
     "file": "breaks/0233.wav",
-    "name": "Massive Break",
+    "name": "0233",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1865,7 +1865,7 @@
   },
   {
     "file": "breaks/0234.wav",
-    "name": "Maximum Booty Break",
+    "name": "0234",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1873,7 +1873,7 @@
   },
   {
     "file": "breaks/0235.wav",
-    "name": "Metropolis Break",
+    "name": "0235",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1881,7 +1881,7 @@
   },
   {
     "file": "breaks/0236.wav",
-    "name": "Moths Break",
+    "name": "0236",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1889,7 +1889,7 @@
   },
   {
     "file": "breaks/0237.wav",
-    "name": "Mutant Break",
+    "name": "0237",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1897,7 +1897,7 @@
   },
   {
     "file": "breaks/0238.wav",
-    "name": "My Sound Break 1",
+    "name": "0238",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1905,7 +1905,7 @@
   },
   {
     "file": "breaks/0239.wav",
-    "name": "My Sound Break 2",
+    "name": "0239",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1913,7 +1913,7 @@
   },
   {
     "file": "breaks/0240.wav",
-    "name": "My Sound Break 3",
+    "name": "0240",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1921,7 +1921,7 @@
   },
   {
     "file": "breaks/0241.wav",
-    "name": "Mystical Break",
+    "name": "0241",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1929,7 +1929,7 @@
   },
   {
     "file": "breaks/0242.wav",
-    "name": "Mystique Break",
+    "name": "0242",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1937,7 +1937,7 @@
   },
   {
     "file": "breaks/0243.wav",
-    "name": "Night Break",
+    "name": "0243",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1945,7 +1945,7 @@
   },
   {
     "file": "breaks/0244.wav",
-    "name": "Night Compound Break",
+    "name": "0244",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1953,7 +1953,7 @@
   },
   {
     "file": "breaks/0245.wav",
-    "name": "Oh Break",
+    "name": "0245",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1961,7 +1961,7 @@
   },
   {
     "file": "breaks/0246.wav",
-    "name": "Overcast Break",
+    "name": "0246",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1969,7 +1969,7 @@
   },
   {
     "file": "breaks/0247.wav",
-    "name": "Parallel World Break",
+    "name": "0247",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1977,7 +1977,7 @@
   },
   {
     "file": "breaks/0248.wav",
-    "name": "Peace Sign Break",
+    "name": "0248",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1985,7 +1985,7 @@
   },
   {
     "file": "breaks/0249.wav",
-    "name": "Pesh Break",
+    "name": "0249",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -1993,7 +1993,7 @@
   },
   {
     "file": "breaks/0250.wav",
-    "name": "Physical Break",
+    "name": "0250",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2001,7 +2001,7 @@
   },
   {
     "file": "breaks/0251.wav",
-    "name": "Physical Break 2",
+    "name": "0251",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2009,7 +2009,7 @@
   },
   {
     "file": "breaks/0252.wav",
-    "name": "Pin Up Break",
+    "name": "0252",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2017,7 +2017,7 @@
   },
   {
     "file": "breaks/0253.wav",
-    "name": "Piper Break",
+    "name": "0253",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2025,7 +2025,7 @@
   },
   {
     "file": "breaks/0254.wav",
-    "name": "Place Break",
+    "name": "0254",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2033,7 +2033,7 @@
   },
   {
     "file": "breaks/0255.wav",
-    "name": "Playboy Break",
+    "name": "0255",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2041,7 +2041,7 @@
   },
   {
     "file": "breaks/0256.wav",
-    "name": "Possible Worlds Break",
+    "name": "0256",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2049,7 +2049,7 @@
   },
   {
     "file": "breaks/0257.wav",
-    "name": "Pressin Break",
+    "name": "0257",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2057,7 +2057,7 @@
   },
   {
     "file": "breaks/0258.wav",
-    "name": "Prog Amen",
+    "name": "0258",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2065,7 +2065,7 @@
   },
   {
     "file": "breaks/0259.wav",
-    "name": "Prog Break",
+    "name": "0259",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2073,7 +2073,7 @@
   },
   {
     "file": "breaks/0260.wav",
-    "name": "Promenade Break",
+    "name": "0260",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2081,7 +2081,7 @@
   },
   {
     "file": "breaks/0261.wav",
-    "name": "Quest Break",
+    "name": "0261",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2089,7 +2089,7 @@
   },
   {
     "file": "breaks/0262.wav",
-    "name": "Rainfall Lite Break",
+    "name": "0262",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2097,7 +2097,7 @@
   },
   {
     "file": "breaks/0263.wav",
-    "name": "Reach Break",
+    "name": "0263",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2105,7 +2105,7 @@
   },
   {
     "file": "breaks/0264.wav",
-    "name": "Reckon Break",
+    "name": "0264",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2113,7 +2113,7 @@
   },
   {
     "file": "breaks/0265.wav",
-    "name": "Reel Funk Amen",
+    "name": "0265",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2121,7 +2121,7 @@
   },
   {
     "file": "breaks/0266.wav",
-    "name": "Reel Funk Roller",
+    "name": "0266",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2129,7 +2129,7 @@
   },
   {
     "file": "breaks/0267.wav",
-    "name": "Reflections Break",
+    "name": "0267",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2137,7 +2137,7 @@
   },
   {
     "file": "breaks/0268.wav",
-    "name": "Repetoire Break",
+    "name": "0268",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2145,7 +2145,7 @@
   },
   {
     "file": "breaks/0269.wav",
-    "name": "Resolution Break",
+    "name": "0269",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2153,7 +2153,7 @@
   },
   {
     "file": "breaks/0270.wav",
-    "name": "Revelation Amen",
+    "name": "0270",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2161,7 +2161,7 @@
   },
   {
     "file": "breaks/0271.wav",
-    "name": "Ricochet Break",
+    "name": "0271",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2169,7 +2169,7 @@
   },
   {
     "file": "breaks/0272.wav",
-    "name": "Right Break",
+    "name": "0272",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2177,7 +2177,7 @@
   },
   {
     "file": "breaks/0273.wav",
-    "name": "Rise Amen",
+    "name": "0273",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2185,7 +2185,7 @@
   },
   {
     "file": "breaks/0274.wav",
-    "name": "Rock Amen",
+    "name": "0274",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2193,7 +2193,7 @@
   },
   {
     "file": "breaks/0275.wav",
-    "name": "Rock Amen 2",
+    "name": "0275",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2201,7 +2201,7 @@
   },
   {
     "file": "breaks/0276.wav",
-    "name": "Roll On Roll",
+    "name": "0276",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2209,7 +2209,7 @@
   },
   {
     "file": "breaks/0277.wav",
-    "name": "Roll On Roll 2",
+    "name": "0277",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2217,7 +2217,7 @@
   },
   {
     "file": "breaks/0278.wav",
-    "name": "Roll On Roll 3",
+    "name": "0278",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2225,7 +2225,7 @@
   },
   {
     "file": "breaks/0279.wav",
-    "name": "Rumble Break",
+    "name": "0279",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2233,7 +2233,7 @@
   },
   {
     "file": "breaks/0280.wav",
-    "name": "Searchin Break",
+    "name": "0280",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2241,7 +2241,7 @@
   },
   {
     "file": "breaks/0281.wav",
-    "name": "Searchin Break 2",
+    "name": "0281",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2249,7 +2249,7 @@
   },
   {
     "file": "breaks/0282.wav",
-    "name": "Searchin Break 3",
+    "name": "0282",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2257,7 +2257,7 @@
   },
   {
     "file": "breaks/0283.wav",
-    "name": "Seatown Break",
+    "name": "0283",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2265,7 +2265,7 @@
   },
   {
     "file": "breaks/0284.wav",
-    "name": "Secrets Amen",
+    "name": "0284",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2273,7 +2273,7 @@
   },
   {
     "file": "breaks/0285.wav",
-    "name": "Session Break",
+    "name": "0285",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2281,7 +2281,7 @@
   },
   {
     "file": "breaks/0286.wav",
-    "name": "Shock Break",
+    "name": "0286",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2289,7 +2289,7 @@
   },
   {
     "file": "breaks/0287.wav",
-    "name": "Shock Filter Break",
+    "name": "0287",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2297,7 +2297,7 @@
   },
   {
     "file": "breaks/0288.wav",
-    "name": "Shoes Break",
+    "name": "0288",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2305,7 +2305,7 @@
   },
   {
     "file": "breaks/0289.wav",
-    "name": "Sight Break",
+    "name": "0289",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2313,7 +2313,7 @@
   },
   {
     "file": "breaks/0290.wav",
-    "name": "Sky Break",
+    "name": "0290",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2321,7 +2321,7 @@
   },
   {
     "file": "breaks/0291.wav",
-    "name": "Solar Break",
+    "name": "0291",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2329,7 +2329,7 @@
   },
   {
     "file": "breaks/0292.wav",
-    "name": "Sonic Amen",
+    "name": "0292",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2337,7 +2337,7 @@
   },
   {
     "file": "breaks/0293.wav",
-    "name": "Sonic Break",
+    "name": "0293",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2345,7 +2345,7 @@
   },
   {
     "file": "breaks/0294.wav",
-    "name": "Sonic Break 2",
+    "name": "0294",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2353,7 +2353,7 @@
   },
   {
     "file": "breaks/0295.wav",
-    "name": "Sound Control Break",
+    "name": "0295",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2361,7 +2361,7 @@
   },
   {
     "file": "breaks/0296.wav",
-    "name": "Sound Murderer Amen",
+    "name": "0296",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2369,7 +2369,7 @@
   },
   {
     "file": "breaks/0297.wav",
-    "name": "Sovreign Break",
+    "name": "0297",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2377,7 +2377,7 @@
   },
   {
     "file": "breaks/0298.wav",
-    "name": "Space Age Break",
+    "name": "0298",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2385,7 +2385,7 @@
   },
   {
     "file": "breaks/0299.wav",
-    "name": "Stepper Amen",
+    "name": "0299",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2393,7 +2393,7 @@
   },
   {
     "file": "breaks/0300.wav",
-    "name": "Stepper Break",
+    "name": "0300",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2401,7 +2401,7 @@
   },
   {
     "file": "breaks/0301.wav",
-    "name": "Still Break",
+    "name": "0301",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2409,7 +2409,7 @@
   },
   {
     "file": "breaks/0302.wav",
-    "name": "Stone Break",
+    "name": "0302",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2417,7 +2417,7 @@
   },
   {
     "file": "breaks/0303.wav",
-    "name": "Sunset Break",
+    "name": "0303",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2425,7 +2425,7 @@
   },
   {
     "file": "breaks/0304.wav",
-    "name": "System Break",
+    "name": "0304",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2433,7 +2433,7 @@
   },
   {
     "file": "breaks/0305.wav",
-    "name": "Take You Break",
+    "name": "0305",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2441,7 +2441,7 @@
   },
   {
     "file": "breaks/0306.wav",
-    "name": "Tear Apache",
+    "name": "0306",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2449,7 +2449,7 @@
   },
   {
     "file": "breaks/0307.wav",
-    "name": "Tear Break",
+    "name": "0307",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2457,7 +2457,7 @@
   },
   {
     "file": "breaks/0308.wav",
-    "name": "Tear Break 2",
+    "name": "0308",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2465,7 +2465,7 @@
   },
   {
     "file": "breaks/0309.wav",
-    "name": "Technology Break",
+    "name": "0309",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2473,7 +2473,7 @@
   },
   {
     "file": "breaks/0310.wav",
-    "name": "Ten Break",
+    "name": "0310",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2481,7 +2481,7 @@
   },
   {
     "file": "breaks/0311.wav",
-    "name": "Ten Break 2",
+    "name": "0311",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2489,7 +2489,7 @@
   },
   {
     "file": "breaks/0312.wav",
-    "name": "Terrain Break",
+    "name": "0312",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2497,7 +2497,7 @@
   },
   {
     "file": "breaks/0313.wav",
-    "name": "Terrain Break 2",
+    "name": "0313",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2505,7 +2505,7 @@
   },
   {
     "file": "breaks/0314.wav",
-    "name": "Terrorist Amen",
+    "name": "0314",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2513,7 +2513,7 @@
   },
   {
     "file": "breaks/0315.wav",
-    "name": "Travelling Break",
+    "name": "0315",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2521,7 +2521,7 @@
   },
   {
     "file": "breaks/0316.wav",
-    "name": "Trippin Break",
+    "name": "0316",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2529,7 +2529,7 @@
   },
   {
     "file": "breaks/0317.wav",
-    "name": "Trippin Break 2",
+    "name": "0317",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2537,7 +2537,7 @@
   },
   {
     "file": "breaks/0318.wav",
-    "name": "Tronik Break",
+    "name": "0318",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2545,7 +2545,7 @@
   },
   {
     "file": "breaks/0319.wav",
-    "name": "True Break",
+    "name": "0319",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2553,7 +2553,7 @@
   },
   {
     "file": "breaks/0320.wav",
-    "name": "Vapour Break",
+    "name": "0320",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2561,7 +2561,7 @@
   },
   {
     "file": "breaks/0321.wav",
-    "name": "Voyage Break",
+    "name": "0321",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2569,7 +2569,7 @@
   },
   {
     "file": "breaks/0322.wav",
-    "name": "Walk Break",
+    "name": "0322",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2577,7 +2577,7 @@
   },
   {
     "file": "breaks/0323.wav",
-    "name": "Walk Break 2",
+    "name": "0323",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2585,7 +2585,7 @@
   },
   {
     "file": "breaks/0324.wav",
-    "name": "Walk Break 3",
+    "name": "0324",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2593,7 +2593,7 @@
   },
   {
     "file": "breaks/0325.wav",
-    "name": "War Break",
+    "name": "0325",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2601,7 +2601,7 @@
   },
   {
     "file": "breaks/0326.wav",
-    "name": "WarPeace Break",
+    "name": "0326",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2609,7 +2609,7 @@
   },
   {
     "file": "breaks/0327.wav",
-    "name": "Warhead Break",
+    "name": "0327",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2617,7 +2617,7 @@
   },
   {
     "file": "breaks/0328.wav",
-    "name": "Warhead Break 2",
+    "name": "0328",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2625,7 +2625,7 @@
   },
   {
     "file": "breaks/0329.wav",
-    "name": "Warned Break",
+    "name": "0329",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2633,7 +2633,7 @@
   },
   {
     "file": "breaks/0330.wav",
-    "name": "Warning Compound",
+    "name": "0330",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2641,7 +2641,7 @@
   },
   {
     "file": "breaks/0331.wav",
-    "name": "Warning Copter",
+    "name": "0331",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2649,7 +2649,7 @@
   },
   {
     "file": "breaks/0332.wav",
-    "name": "Way Break",
+    "name": "0332",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2657,7 +2657,7 @@
   },
   {
     "file": "breaks/0333.wav",
-    "name": "Wheel Up 2 Bad",
+    "name": "0333",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2665,7 +2665,7 @@
   },
   {
     "file": "breaks/0334.wav",
-    "name": "Wheel Up Amen",
+    "name": "0334",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2673,7 +2673,7 @@
   },
   {
     "file": "breaks/0335.wav",
-    "name": "Worries Break",
+    "name": "0335",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2681,7 +2681,7 @@
   },
   {
     "file": "breaks/0336.wav",
-    "name": "Your Amen",
+    "name": "0336",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2689,7 +2689,7 @@
   },
   {
     "file": "breaks/0337.wav",
-    "name": "Your Amen 2",
+    "name": "0337",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2697,7 +2697,7 @@
   },
   {
     "file": "breaks/0338.wav",
-    "name": "Your Break",
+    "name": "0338",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2705,7 +2705,7 @@
   },
   {
     "file": "breaks/0339.wav",
-    "name": "Zone Break 2",
+    "name": "0339",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2713,7 +2713,7 @@
   },
   {
     "file": "breaks/0340.wav",
-    "name": "Zone Break",
+    "name": "0340",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2721,7 +2721,7 @@
   },
   {
     "file": "breaks/0341.wav",
-    "name": "Break 0341",
+    "name": "0341",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2729,7 +2729,7 @@
   },
   {
     "file": "breaks/0342.wav",
-    "name": "Break 0342",
+    "name": "0342",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2737,7 +2737,7 @@
   },
   {
     "file": "breaks/0343.wav",
-    "name": "Break 0343",
+    "name": "0343",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2745,7 +2745,7 @@
   },
   {
     "file": "breaks/0344.wav",
-    "name": "Break 0344",
+    "name": "0344",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2753,7 +2753,7 @@
   },
   {
     "file": "breaks/0345.wav",
-    "name": "Break 0345",
+    "name": "0345",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2761,7 +2761,7 @@
   },
   {
     "file": "breaks/0346.wav",
-    "name": "Break 0346",
+    "name": "0346",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2769,7 +2769,7 @@
   },
   {
     "file": "breaks/0347.wav",
-    "name": "Break 0347",
+    "name": "0347",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2777,7 +2777,7 @@
   },
   {
     "file": "breaks/0348.wav",
-    "name": "Break 0348",
+    "name": "0348",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2785,7 +2785,7 @@
   },
   {
     "file": "breaks/0349.wav",
-    "name": "Break 0349",
+    "name": "0349",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2793,7 +2793,7 @@
   },
   {
     "file": "breaks/0350.wav",
-    "name": "Break 0350",
+    "name": "0350",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2801,7 +2801,7 @@
   },
   {
     "file": "breaks/0351.wav",
-    "name": "Break 0351",
+    "name": "0351",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2809,7 +2809,7 @@
   },
   {
     "file": "breaks/0352.wav",
-    "name": "Break 0352",
+    "name": "0352",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2817,7 +2817,7 @@
   },
   {
     "file": "breaks/0353.wav",
-    "name": "Break 0353",
+    "name": "0353",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2825,7 +2825,7 @@
   },
   {
     "file": "breaks/0354.wav",
-    "name": "Break 0354",
+    "name": "0354",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2833,7 +2833,7 @@
   },
   {
     "file": "breaks/0355.wav",
-    "name": "Break 0355",
+    "name": "0355",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2841,7 +2841,7 @@
   },
   {
     "file": "breaks/0356.wav",
-    "name": "Break 0356",
+    "name": "0356",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2849,7 +2849,7 @@
   },
   {
     "file": "breaks/0357.wav",
-    "name": "Break 0357",
+    "name": "0357",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2857,7 +2857,7 @@
   },
   {
     "file": "breaks/0358.wav",
-    "name": "Break 0358",
+    "name": "0358",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2865,7 +2865,7 @@
   },
   {
     "file": "breaks/0359.wav",
-    "name": "Break 0359",
+    "name": "0359",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2873,7 +2873,7 @@
   },
   {
     "file": "breaks/0360.wav",
-    "name": "Break 0360",
+    "name": "0360",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2881,7 +2881,7 @@
   },
   {
     "file": "breaks/0361.wav",
-    "name": "Break 0361",
+    "name": "0361",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2889,7 +2889,7 @@
   },
   {
     "file": "breaks/0362.wav",
-    "name": "Break 0362",
+    "name": "0362",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2897,7 +2897,7 @@
   },
   {
     "file": "breaks/0363.wav",
-    "name": "Break 0363",
+    "name": "0363",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2905,7 +2905,7 @@
   },
   {
     "file": "breaks/0364.wav",
-    "name": "Break 0364",
+    "name": "0364",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2913,7 +2913,7 @@
   },
   {
     "file": "breaks/0365.wav",
-    "name": "Break 0365",
+    "name": "0365",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2921,7 +2921,7 @@
   },
   {
     "file": "breaks/0366.wav",
-    "name": "Break 0366",
+    "name": "0366",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2929,7 +2929,7 @@
   },
   {
     "file": "breaks/0367.wav",
-    "name": "Break 0367",
+    "name": "0367",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2937,7 +2937,7 @@
   },
   {
     "file": "breaks/0368.wav",
-    "name": "Break 0368",
+    "name": "0368",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2945,7 +2945,7 @@
   },
   {
     "file": "breaks/0369.wav",
-    "name": "Break 0369",
+    "name": "0369",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2953,7 +2953,7 @@
   },
   {
     "file": "breaks/0370.wav",
-    "name": "Break 0370",
+    "name": "0370",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2961,7 +2961,7 @@
   },
   {
     "file": "breaks/0371.wav",
-    "name": "Break 0371",
+    "name": "0371",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2969,7 +2969,7 @@
   },
   {
     "file": "breaks/0372.wav",
-    "name": "Break 0372",
+    "name": "0372",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2977,7 +2977,7 @@
   },
   {
     "file": "breaks/0373.wav",
-    "name": "Break 0373",
+    "name": "0373",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2985,7 +2985,7 @@
   },
   {
     "file": "breaks/0374.wav",
-    "name": "Break 0374",
+    "name": "0374",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
@@ -2993,7 +2993,7 @@
   },
   {
     "file": "breaks/0375.wav",
-    "name": "Break 0375",
+    "name": "0375",
     "cropStart": 0,
     "cropEnd": 1,
     "numSlices": 16,
