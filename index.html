@@ -113,6 +113,20 @@ async function dbRename(id, newName, storeName = STORE_NAME) {
   });
 }
 
+// ─── localStorage helpers for shared break settings ───
+function getSharedSettings(file) {
+  try {
+    const s = localStorage.getItem('brk-rmx-shared:' + file);
+    return s ? JSON.parse(s) : null;
+  } catch(e) { return null; }
+}
+
+function saveSharedSettings(file, settings) {
+  try {
+    localStorage.setItem('brk-rmx-shared:' + file, JSON.stringify(settings));
+  } catch(e) { console.error('Failed to save shared settings:', e); }
+}
+
 async function dbUpdateBreakSettings(id, settings) {
   const db = await openDB();
   return new Promise((resolve, reject) => {
@@ -272,11 +286,12 @@ function App() {
       const decoded = await decodeArrayBuffer(ab);
       setActiveSharedId(item.file);
       setActiveLibId(null);
+      const saved = getSharedSettings(item.file);
       loadRawBuffer(decoded, item.name, {
-        cropStart: item.cropStart,
-        cropEnd: item.cropEnd,
-        numSlices: item.numSlices,
-        numSteps: item.numSteps,
+        cropStart: saved?.cropStart ?? item.cropStart,
+        cropEnd: saved?.cropEnd ?? item.cropEnd,
+        numSlices: saved?.numSlices ?? item.numSlices,
+        numSteps: saved?.numSteps ?? item.numSteps,
       });
     } catch(e) { console.error('Failed to load shared break:', e); }
   }, []);
@@ -348,7 +363,7 @@ function App() {
     else if(rawBuffer) setAudioBuffer(rawBuffer);
   },[cropStart,cropEnd,rawBuffer]);
 
-  // Auto-save per-break settings (crop, slices, steps) for active library item
+  // Auto-save per-break settings (crop, slices, steps) for active user library item
   useEffect(() => {
     if (activeLibId == null) return;
     const t = setTimeout(() => {
@@ -362,6 +377,15 @@ function App() {
     }, 500);
     return () => clearTimeout(t);
   }, [activeLibId, cropStart, cropEnd, numSlices, numSteps]);
+
+  // Auto-save crop/slice/step settings for active shared library item
+  useEffect(() => {
+    if (activeSharedId == null) return;
+    const t = setTimeout(() => {
+      saveSharedSettings(activeSharedId, { cropStart, cropEnd, numSlices, numSteps });
+    }, 500);
+    return () => clearTimeout(t);
+  }, [activeSharedId, cropStart, cropEnd, numSlices, numSteps]);
 
   // ─── File handling (add to library + load) ───
   const handleFile = useCallback(async (e) => {
