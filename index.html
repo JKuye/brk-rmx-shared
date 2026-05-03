@@ -3,20 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>BRK//RMX — Probability Break Remixer</title>
+<title>BRK//RMX</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: #0a0a0a; color: #e8e0d8; font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace; }
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap');
-  ::-webkit-scrollbar { width: 6px; height: 6px; }
-  ::-webkit-scrollbar-track { background: #0a0a0a; }
-  ::-webkit-scrollbar-thumb { background: #222; border-radius: 3px; }
-  input[type=range] { -webkit-appearance: none; appearance: none; background: #222; height: 4px; border-radius: 2px; outline: none; width: 100%; }
-  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; background: #ff3d00; border-radius: 50%; cursor: pointer; box-shadow: 0 0 8px #ff3d0033; }
-  select { outline: none; }
-  select option { background: #0a0a0a; color: #e8e0d8; }
-  @keyframes recPulse { 0%,100%{box-shadow:0 0 0 #ff1744} 50%{box-shadow:0 0 14px #ff174488} }
-  button { font-family: inherit; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #0d0d0d;
+  color: #888;
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+}
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 0; }
+input[type=range] {
+  -webkit-appearance: none; appearance: none;
+  background: #0d0d0d; height: 2px; border-radius: 0; outline: none; width: 100%;
+  border: 1px solid #222;
+  box-shadow: inset 0 1px 2px #000;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px; height: 18px;
+  background: linear-gradient(to bottom, #3a3a3a 0%, #242424 60%, #181818 100%);
+  border: 1px solid #484848; border-bottom: 1px solid #111; border-radius: 1px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px #000;
+}
+select { outline: none; }
+select option { background: #1a1a1a; color: #888; }
+@keyframes recPulse {
+  0%,100% { box-shadow: inset 1px 1px 3px #000 }
+  50% { box-shadow: 0 0 10px #ff220088, inset 1px 1px 3px #000 }
+}
+@keyframes stepGlow {
+  0%,100% { opacity: 1 }
+  50% { opacity: 0.6 }
+}
+button { font-family: inherit; }
 </style>
 </head>
 <body>
@@ -35,10 +58,30 @@ const DEFAULT_STEPS = 16;
 const DEFAULT_SLICES = 16;
 
 const C = {
-  bg:'#0a0a0a', surface:'#141414', border:'#222',
-  accent:'#ff3d00', accentDim:'#ff3d0044', accentGlow:'#ff3d0033',
-  warm:'#ff6d00', text:'#e8e0d8', textDim:'#6b635b',
-  green:'#00e676', greenDim:'#00e67633', cyan:'#00bcd4',
+  bg:        '#0d0d0d',
+  chassis:   '#1b1b1b',
+  panel:     '#1e1e1e',
+  panelDark: '#151515',
+  border:    '#282828',
+  borderHi:  '#3c3c3c',
+  borderSh:  '#0a0a0a',
+  lcdBg:     '#030a03',
+  lcd:       '#3dff7a',
+  lcdMid:    '#178535',
+  lcdDim:    '#091409',
+  ledRed:    '#ff2200',
+  ledAmber:  '#ffaa00',
+  ledGreen:  '#00ff44',
+  text:      '#777',
+  textBright:'#aaa',
+  textDim:   '#3a3a3a',
+  accent:    '#ffaa00',
+  accentDim: '#ffaa0033',
+  warm:      '#ff6600',
+  cyan:      '#00bbee',
+  cyanDim:   '#00bbee33',
+  green:     '#00ff44',
+  greenDim:  '#00ff4422',
 };
 
 // ─── IndexedDB helpers ───
@@ -47,12 +90,10 @@ function openDB() {
     const req = indexedDB.open(DB_NAME, DB_VERSION);
     req.onupgradeneeded = (e) => {
       const db = e.target.result;
-      if (!db.objectStoreNames.contains(STORE_NAME)) {
+      if (!db.objectStoreNames.contains(STORE_NAME))
         db.createObjectStore(STORE_NAME, { keyPath: 'id', autoIncrement: true });
-      }
-      if (!db.objectStoreNames.contains(PATTERN_STORE)) {
+      if (!db.objectStoreNames.contains(PATTERN_STORE))
         db.createObjectStore(PATTERN_STORE, { keyPath: 'id', autoIncrement: true });
-      }
     };
     req.onsuccess = () => resolve(req.result);
     req.onerror = () => reject(req.error);
@@ -63,8 +104,7 @@ async function dbGetAll(storeName = STORE_NAME) {
   const db = await openDB();
   return new Promise((resolve, reject) => {
     const tx = db.transaction(storeName, 'readonly');
-    const store = tx.objectStore(storeName);
-    const req = store.getAll();
+    const req = tx.objectStore(storeName).getAll();
     req.onsuccess = () => resolve(req.result);
     req.onerror = () => reject(req.error);
   });
@@ -74,8 +114,7 @@ async function dbAdd(name, arrayBuffer) {
   const db = await openDB();
   return new Promise((resolve, reject) => {
     const tx = db.transaction(STORE_NAME, 'readwrite');
-    const store = tx.objectStore(STORE_NAME);
-    const req = store.add({
+    const req = tx.objectStore(STORE_NAME).add({
       name, audioData: arrayBuffer, addedAt: Date.now(),
       cropStart: 0, cropEnd: 1, numSlices: DEFAULT_SLICES, numSteps: DEFAULT_STEPS,
     });
@@ -88,8 +127,7 @@ async function dbDelete(id, storeName = STORE_NAME) {
   const db = await openDB();
   return new Promise((resolve, reject) => {
     const tx = db.transaction(storeName, 'readwrite');
-    const store = tx.objectStore(storeName);
-    const req = store.delete(id);
+    const req = tx.objectStore(storeName).delete(id);
     req.onsuccess = () => resolve();
     req.onerror = () => reject(req.error);
   });
@@ -113,18 +151,14 @@ async function dbRename(id, newName, storeName = STORE_NAME) {
   });
 }
 
-// ─── localStorage helpers for shared break settings ───
 function getSharedSettings(file) {
-  try {
-    const s = localStorage.getItem('brk-rmx-shared:' + file);
-    return s ? JSON.parse(s) : null;
-  } catch(e) { return null; }
+  try { const s = localStorage.getItem('brk-rmx-shared:' + file); return s ? JSON.parse(s) : null; }
+  catch(e) { return null; }
 }
 
 function saveSharedSettings(file, settings) {
-  try {
-    localStorage.setItem('brk-rmx-shared:' + file, JSON.stringify(settings));
-  } catch(e) { console.error('Failed to save shared settings:', e); }
+  try { localStorage.setItem('brk-rmx-shared:' + file, JSON.stringify(settings)); }
+  catch(e) { console.error('Failed to save shared settings:', e); }
 }
 
 async function dbUpdateBreakSettings(id, settings) {
@@ -149,14 +183,12 @@ async function dbAddPattern(name, data) {
   const db = await openDB();
   return new Promise((resolve, reject) => {
     const tx = db.transaction(PATTERN_STORE, 'readwrite');
-    const store = tx.objectStore(PATTERN_STORE);
-    const req = store.add({ name, ...data, addedAt: Date.now() });
+    const req = tx.objectStore(PATTERN_STORE).add({ name, ...data, addedAt: Date.now() });
     req.onsuccess = () => resolve(req.result);
     req.onerror = () => reject(req.error);
   });
 }
 
-// ─── Audio helpers ───
 function encodeWAV(buf) {
   const nCh = buf.numberOfChannels, sr = buf.sampleRate, len = buf.length;
   const bps = 2, ba = nCh * bps, ds = len * ba;
@@ -177,7 +209,9 @@ function encodeWAV(buf) {
 
 function heatColor(p) {
   if(p===0) return 'transparent';
-  return `rgba(${Math.round(255*Math.min(1,p*1.5))},${Math.round(100*(1-p))},20,${0.15+p*0.75})`;
+  const r=Math.round(255*Math.min(1,p*1.8));
+  const g=Math.round(110*p*(1-p*0.4));
+  return `rgba(${r},${g},0,${0.18+p*0.72})`;
 }
 
 function normalizeRow(row) {
@@ -185,7 +219,6 @@ function normalizeRow(row) {
   return t===0?row:row.map(v=>v/t);
 }
 
-// ─── Main App ───
 function App() {
   const [rawBuffer, setRawBuffer] = useState(null);
   const [audioBuffer, setAudioBuffer] = useState(null);
@@ -210,7 +243,6 @@ function App() {
   const [cropStart, setCropStart] = useState(0);
   const [cropEnd, setCropEnd] = useState(1);
   const [dragging, setDragging] = useState(null);
-  // Persistent library: { id, name, audioData(ArrayBuffer), cropStart, cropEnd, numSlices, numSteps }
   const [library, setLibrary] = useState([]);
   const [sharedLibrary, setSharedLibrary] = useState([]);
   const [activeLibId, setActiveLibId] = useState(null);
@@ -220,7 +252,6 @@ function App() {
   const [renamingId, setRenamingId] = useState(null);
   const [renameText, setRenameText] = useState('');
   const [renameStore, setRenameStore] = useState(STORE_NAME);
-  // Patterns
   const [patterns, setPatterns] = useState([]);
   const [showPatterns, setShowPatterns] = useState(false);
 
@@ -280,7 +311,6 @@ function App() {
     else if(asid!=null) saveSharedSettings(asid,{cropStart:cs,cropEnd:ce,numSlices:ns,numSteps:nst});
   },[]);
 
-  // Load library from IndexedDB on mount + fetch shared library
   useEffect(() => {
     (async () => {
       try {
@@ -291,7 +321,6 @@ function App() {
       } catch(e) { console.error('Failed to load:', e); }
       setLibLoading(false);
     })();
-    // Fetch shared library
     (async () => {
       try {
         const res = await fetch('library.json');
@@ -367,21 +396,16 @@ function App() {
       const ns = settings.numSlices ?? numSlices;
       const nst = settings.numSteps ?? numSteps;
       if (ns !== numSlices || nst !== numSteps) {
-        setNumSlices(ns);
-        setNumSteps(nst);
-        setGrid(initGrid(ns, nst));
-        setReverse(Array(nst).fill(false));
+        setNumSlices(ns); setNumSteps(nst);
+        setGrid(initGrid(ns, nst)); setReverse(Array(nst).fill(false));
       }
-    } else {
-      setCropStart(0); setCropEnd(1);
-    }
+    } else { setCropStart(0); setCropEnd(1); }
     setWaveformData(generateWaveform(decoded));
     setAudioBuffer(decoded);
   }
 
   async function decodeArrayBuffer(arrayBuffer) {
     const ctx = getAudioContext();
-    // Must copy because decodeAudioData detaches the buffer
     const copy = arrayBuffer.slice(0);
     return ctx.decodeAudioData(copy);
   }
@@ -398,24 +422,19 @@ function App() {
     if (activeLibId != null) {
       dbUpdateBreakSettings(activeLibId, { cropStart, cropEnd, numSlices, numSteps })
         .then(() => {
-          setLibrary(prev => prev.map(x => x.id === activeLibId
-            ? { ...x, cropStart, cropEnd, numSlices, numSteps } : x));
-          setSavedFlash(true);
-          setTimeout(() => setSavedFlash(false), 1200);
-        })
-        .catch(e => console.error('Settings save failed:', e));
+          setLibrary(prev => prev.map(x => x.id === activeLibId ? { ...x, cropStart, cropEnd, numSlices, numSteps } : x));
+          setSavedFlash(true); setTimeout(() => setSavedFlash(false), 1200);
+        }).catch(e => console.error('Settings save failed:', e));
     } else if (activeSharedId != null) {
       saveSharedSettings(activeSharedId, { cropStart, cropEnd, numSlices, numSteps });
-      setSavedFlash(true);
-      setTimeout(() => setSavedFlash(false), 1200);
+      setSavedFlash(true); setTimeout(() => setSavedFlash(false), 1200);
     }
   }, [activeLibId, activeSharedId, cropStart, cropEnd, numSlices, numSteps]);
 
-  // ─── File handling (add to library + load) ───
   const handleFile = useCallback(async (e) => {
     const files = Array.from(e.target.files||[]);
     if(!files.length) return;
-    getAudioContext(); // ensure context
+    getAudioContext();
     let firstDecoded = null, firstName = null;
     for(const file of files) {
       try {
@@ -427,21 +446,18 @@ function App() {
       } catch(err) { console.error(`Failed: ${file.name}`, err); }
     }
     if(firstDecoded) loadRawBuffer(firstDecoded, firstName);
-    e.target.value = ''; // reset input
+    e.target.value = '';
   }, []);
 
   const selectFromLibrary = useCallback(async (item) => {
     try {
       saveCurrentBreak();
       const decoded = await decodeArrayBuffer(item.audioData);
-      setActiveLibId(item.id);
-      setActiveSharedId(null);
+      setActiveLibId(item.id); setActiveSharedId(null);
       const cc = copiedConfigRef.current;
       loadRawBuffer(decoded, item.name, cc || {
-        cropStart: item.cropStart,
-        cropEnd: item.cropEnd,
-        numSlices: item.numSlices,
-        numSteps: item.numSteps,
+        cropStart: item.cropStart, cropEnd: item.cropEnd,
+        numSlices: item.numSlices, numSteps: item.numSteps,
       });
     } catch(e) { console.error('Failed to decode:', e); }
   }, [saveCurrentBreak]);
@@ -465,9 +481,7 @@ function App() {
   }, []);
 
   const startRename = useCallback((item, store = STORE_NAME) => {
-    setRenamingId(item.id);
-    setRenameText(item.name);
-    setRenameStore(store);
+    setRenamingId(item.id); setRenameText(item.name); setRenameStore(store);
   }, []);
 
   const confirmRename = useCallback(async () => {
@@ -488,23 +502,15 @@ function App() {
     const name = prompt('Pattern name:', `Pattern ${patterns.length + 1}`);
     if (!name || !name.trim()) return;
     try {
-      const data = {
-        grid: grid.map(row => [...row]),
-        reverse: [...reverse],
-        bpm, swing, chaos, numSteps, numSlices,
-      };
+      const data = { grid: grid.map(row => [...row]), reverse: [...reverse], bpm, swing, chaos, numSteps, numSlices };
       const id = await dbAddPattern(name.trim(), data);
       setPatterns(prev => [...prev, { id, name: name.trim(), ...data }]);
     } catch(e) { console.error('Save pattern failed:', e); }
   }, [grid, reverse, bpm, swing, chaos, numSteps, numSlices, patterns.length]);
 
   const loadPattern = useCallback((pattern) => {
-    if (pattern.numSteps && pattern.numSteps !== numSteps) {
-      setNumSteps(pattern.numSteps);
-    }
-    if (pattern.numSlices && pattern.numSlices !== numSlices) {
-      setNumSlices(pattern.numSlices);
-    }
+    if (pattern.numSteps && pattern.numSteps !== numSteps) setNumSteps(pattern.numSteps);
+    if (pattern.numSlices && pattern.numSlices !== numSlices) setNumSlices(pattern.numSlices);
     setGrid(pattern.grid.map(row => [...row]));
     setReverse([...pattern.reverse]);
     if (pattern.bpm != null) setBpm(pattern.bpm);
@@ -512,7 +518,6 @@ function App() {
     if (pattern.chaos != null) setChaos(pattern.chaos);
   }, [numSteps, numSlices]);
 
-  // ─── Mic recording ───
   const startRecording = useCallback(async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({audio:true});
@@ -538,7 +543,6 @@ function App() {
     if(recTimerRef.current)clearInterval(recTimerRef.current);
   },[]);
 
-  // ─── Output capture ───
   const startCapture = useCallback(()=>{
     if(!captureDestRef.current)getAudioContext();
     const mr=new MediaRecorder(captureDestRef.current.stream);
@@ -565,7 +569,6 @@ function App() {
     if(captureTimerRef.current)clearInterval(captureTimerRef.current);
   },[]);
 
-  // ─── Preview ───
   const togglePreview = useCallback(()=>{
     if(isPreviewing){try{previewSourceRef.current.stop();}catch(e){}setIsPreviewing(false);return;}
     if(!audioBuffer)return;
@@ -647,13 +650,11 @@ function App() {
     if(activeSharedId){
       const idx=sharedLibrary.findIndex(x=>x.file===activeSharedId);
       if(idx===-1)return;
-      const ni=(idx+dir+sharedLibrary.length)%sharedLibrary.length;
-      selectFromShared(sharedLibrary[ni]);
+      selectFromShared(sharedLibrary[(idx+dir+sharedLibrary.length)%sharedLibrary.length]);
     } else if(activeLibId!=null){
       const idx=library.findIndex(x=>x.id===activeLibId);
       if(idx===-1)return;
-      const ni=(idx+dir+library.length)%library.length;
-      selectFromLibrary(library[ni]);
+      selectFromLibrary(library[(idx+dir+library.length)%library.length]);
     }
   },[activeSharedId,activeLibId,sharedLibrary,library,selectFromShared,selectFromLibrary]);
 
@@ -666,7 +667,6 @@ function App() {
     for(let s=0;s<numSteps;s++)g[s][s%numSlices]=1;setGrid(g);
   },[numSlices,numSteps]);
 
-  // ─── Crop drag ───
   const handleWaveformPointerDown = useCallback(e=>{
     if(!waveformContainerRef.current||!rawBuffer)return;
     const rect=waveformContainerRef.current.getBoundingClientRect();
@@ -716,10 +716,7 @@ function App() {
   useEffect(()=>{
     const handler=e=>{
       if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
-      if(e.code==='Space'){
-        e.preventDefault();
-        if(isPlayingRef.current)stopPlayback();else if(audioBufferRef.current)startPlayback();
-      }
+      if(e.code==='Space'){e.preventDefault();if(isPlayingRef.current)stopPlayback();else if(audioBufferRef.current)startPlayback();}
       if(e.code==='ArrowRight'){e.preventDefault();navigateBreak(1);}
       if(e.code==='ArrowLeft'){e.preventDefault();navigateBreak(-1);}
     };
@@ -727,401 +724,643 @@ function App() {
     return()=>window.removeEventListener('keydown',handler);
   },[navigateBreak,startPlayback,stopPlayback]);
 
-  // ─── Render ───
-  const btn = (label,onClick,style={})=>(
-    <button onClick={onClick} style={{padding:'10px 16px',background:C.surface,color:C.text,border:`1px solid ${C.border}`,borderRadius:6,fontSize:11,fontWeight:500,cursor:'pointer',letterSpacing:1,...style}}>{label}</button>
+  // ─── Style helpers ───
+  const hwBtn = (label, onClick, opts={}) => {
+    const {active=false, activeColor=C.lcd, danger=false, big=false, style:s={}} = opts;
+    const base = danger ? '#2a0a0a' : '#1e1e1e';
+    const activeBg = danger ? '#3a0a0a' : '#111';
+    return (
+      <button onClick={onClick} style={{
+        padding: big ? '11px 28px' : '7px 12px',
+        background: active ? activeBg : `linear-gradient(to bottom, #252525, ${base})`,
+        color: active ? activeColor : danger ? '#aa4444' : C.text,
+        border: `1px solid ${active ? C.borderHi : C.border}`,
+        borderBottom: active ? `1px solid ${C.border}` : `2px solid #080808`,
+        borderRight: active ? `1px solid ${C.border}` : `2px solid #080808`,
+        borderRadius: 2,
+        fontSize: big ? 12 : 10,
+        letterSpacing: 1.5,
+        cursor: 'pointer',
+        textShadow: active ? `0 0 8px ${activeColor}99` : 'none',
+        boxShadow: active ? 'inset 1px 1px 3px #000' : '1px 1px 0 #080808',
+        transition: 'color 0.1s',
+        ...s,
+      }}>{label}</button>
+    );
+  };
+
+  const lcdPanel = (value, label, suffix='') => (
+    <div style={{
+      background: C.panelDark,
+      border: `1px solid ${C.border}`,
+      borderTop: `1px solid ${C.borderHi}`,
+      borderLeft: `1px solid ${C.borderHi}`,
+      borderRadius: 2,
+      padding: '10px 12px',
+      boxShadow: '2px 2px 0 #080808',
+    }}>
+      <div style={{fontSize:9, color:C.textDim, letterSpacing:2, marginBottom:5, textTransform:'uppercase'}}>{label}</div>
+      <div style={{
+        background: C.lcdBg,
+        border: `1px solid #0e280e`,
+        padding: '3px 8px',
+        marginBottom: 8,
+        textAlign: 'right',
+        fontSize: 17,
+        color: C.lcd,
+        textShadow: `0 0 8px ${C.lcd}66`,
+        boxShadow: `inset 0 0 12px #000a00`,
+        letterSpacing: 2,
+        lineHeight: 1.3,
+      }}>{value}<span style={{fontSize:10, marginLeft:3, color:C.lcdMid}}>{suffix}</span></div>
+    </div>
   );
 
+  // ─── Render ───
   return (
-    <div style={{padding:20,maxWidth:1000,margin:'0 auto'}}>
+    <div style={{background: C.bg, minHeight:'100vh', padding:'16px 12px', display:'flex', justifyContent:'center'}}>
+      <div style={{
+        width:'100%', maxWidth:1020,
+        background: C.chassis,
+        borderRadius: 6,
+        border: `2px solid #0a0a0a`,
+        borderTop: `2px solid #2e2e2e`,
+        borderLeft: `2px solid #282828`,
+        boxShadow: '0 12px 40px #000, 0 2px 4px #000, inset 0 1px 0 #333',
+        padding: '18px 18px 22px',
+        position: 'relative',
+      }}>
 
-      {/* Header */}
-      <div style={{marginBottom:24,display:'flex',alignItems:'baseline',gap:8,flexWrap:'wrap'}}>
-        <h1 style={{fontSize:22,fontFamily:"'Space Grotesk',sans-serif",fontWeight:700,color:C.accent,margin:0,letterSpacing:'-0.5px'}}>BRK//RMX</h1>
-        <span style={{color:C.textDim,fontSize:11,letterSpacing:1}}>PROBABILITY BREAK REMIXER</span>
-        <button onClick={()=>{setShowLibrary(!showLibrary);if(!showLibrary)setShowPatterns(false);}} style={{
-          marginLeft:'auto',padding:'6px 14px',background:showLibrary?C.accent:C.surface,
-          color:showLibrary?'#000':C.text,border:`1px solid ${showLibrary?C.accent:C.border}`,
-          borderRadius:6,fontSize:11,fontWeight:600,cursor:'pointer',letterSpacing:1,
-        }}>
-          LIBRARY ({library.length})
-        </button>
-        <button onClick={()=>{setShowPatterns(!showPatterns);if(!showPatterns)setShowLibrary(false);}} style={{
-          padding:'6px 14px',background:showPatterns?C.cyan:C.surface,
-          color:showPatterns?'#000':C.text,border:`1px solid ${showPatterns?C.cyan:C.border}`,
-          borderRadius:6,fontSize:11,fontWeight:600,cursor:'pointer',letterSpacing:1,
-        }}>
-          PATTERNS ({patterns.length})
-        </button>
-      </div>
+        {/* Corner screws */}
+        {[{top:7,left:7},{top:7,right:7},{bottom:7,left:7},{bottom:7,right:7}].map((pos,i)=>(
+          <div key={i} style={{
+            position:'absolute',...pos,
+            width:9,height:9,borderRadius:'50%',
+            background:'radial-gradient(circle at 35% 35%, #323232, #0d0d0d)',
+            border:'1px solid #222',
+            boxShadow:'inset 1px 1px 2px #000',
+          }}/>
+        ))}
 
-      {/* Library Panel */}
-      {showLibrary && (
-        <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:8,padding:16,marginBottom:16}}>
-          <div style={{display:'flex',alignItems:'center',gap:8,marginBottom:12,flexWrap:'wrap'}}>
-            <span style={{fontSize:11,color:C.textDim,letterSpacing:1}}>YOUR BREAKS</span>
-            <label style={{marginLeft:'auto',padding:'6px 14px',background:C.accent,color:'#fff',borderRadius:6,cursor:'pointer',fontSize:11,fontWeight:500}}>
-              + ADD FILES
-              <input type="file" accept="audio/*" multiple onChange={handleFile} style={{display:'none'}} />
-            </label>
+        {/* ── HEADER: LCD display + nav + panel toggles ── */}
+        <div style={{display:'flex', gap:10, marginBottom:14, alignItems:'stretch'}}>
+
+          {/* LCD display */}
+          <div style={{
+            flex:1,
+            background: C.lcdBg,
+            border: `1px solid #0e280e`,
+            borderRadius: 2,
+            padding: '10px 14px',
+            boxShadow: `inset 0 0 30px #000800, inset 1px 1px 4px #000`,
+            minWidth: 0,
+          }}>
+            <div style={{
+              fontSize: 22,
+              color: C.lcd,
+              letterSpacing: 5,
+              textShadow: `0 0 14px ${C.lcd}66, 0 0 30px ${C.lcd}22`,
+              lineHeight: 1,
+              marginBottom: 4,
+            }}>BRK//RMX</div>
+            <div style={{fontSize:8, color:C.lcdMid, letterSpacing:3, marginBottom: fileName ? 4 : 0}}>
+              PROBABILITY BREAK REMIXER
+            </div>
+            {fileName && (
+              <div style={{
+                fontSize:10, color:`${C.lcd}99`,
+                textShadow:`0 0 6px ${C.lcd}44`,
+                overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap',
+                letterSpacing:1,
+              }}>▶ {fileName}</div>
+            )}
           </div>
 
-          {/* Shared library section (read-only) */}
-          {sharedLibrary.length > 0 && (
-            <div style={{marginBottom:16}}>
-              <div style={{fontSize:9,color:C.cyan,letterSpacing:1,marginBottom:6,opacity:0.8}}>
-                ★ SHARED BREAKS ({sharedLibrary.length})
+          {/* Nav + status */}
+          <div style={{display:'flex', flexDirection:'column', gap:6, justifyContent:'space-between'}}>
+            <div style={{display:'flex', gap:4}}>
+              {hwBtn('◄', ()=>navigateBreak(-1))}
+              {hwBtn('►', ()=>navigateBreak(1))}
+            </div>
+            {isPlaying && (
+              <div style={{
+                background: C.lcdBg,
+                border: `1px solid #0e280e`,
+                padding: '4px 8px',
+                fontSize: 10,
+                color: C.lcd,
+                textShadow: `0 0 6px ${C.lcd}66`,
+                letterSpacing: 1,
+                textAlign: 'center',
+                boxShadow: `inset 0 0 10px #000800`,
+              }}>
+                {String(currentStep+1).padStart(2,'0')}/{numSteps}
+                <span style={{color:C.lcdMid, margin:'0 4px'}}>·</span>
+                S{String(lastPickedSlice+1).padStart(2,'0')}
               </div>
-              <div style={{display:'flex',flexDirection:'column',gap:4,maxHeight:200,overflowY:'auto'}}>
-                {sharedLibrary.map(item => (
-                  <div key={item.file} style={{
-                    display:'flex',alignItems:'center',gap:8,padding:'8px 10px',
-                    background:activeSharedId===item.file?`${C.cyan}15`:'transparent',
-                    border:`1px solid ${activeSharedId===item.file?C.cyan+'66':C.border}`,
-                    borderRadius:6,cursor:'pointer',
-                  }} onClick={()=>selectFromShared(item)}>
-                    <span style={{fontSize:9,color:C.cyan,opacity:0.7}}>★</span>
-                    <span style={{flex:1,fontSize:11,color:activeSharedId===item.file?C.cyan:C.text,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>
-                      {item.name}
-                    </span>
+            )}
+          </div>
+
+          {/* Panel toggle buttons */}
+          <div style={{display:'flex', flexDirection:'column', gap:4}}>
+            {hwBtn(`LIB (${library.length})`, ()=>{setShowLibrary(!showLibrary);if(!showLibrary)setShowPatterns(false);},
+              {active:showLibrary, activeColor:C.lcd})}
+            {hwBtn(`PAT (${patterns.length})`, ()=>{setShowPatterns(!showPatterns);if(!showPatterns)setShowLibrary(false);},
+              {active:showPatterns, activeColor:C.cyan})}
+          </div>
+        </div>
+
+        {/* ── LIBRARY PANEL ── */}
+        {showLibrary && (
+          <div style={{
+            background: C.panelDark,
+            border: `1px solid ${C.border}`,
+            borderTop: `1px solid ${C.borderHi}`,
+            borderLeft: `1px solid ${C.borderHi}`,
+            borderRadius: 2,
+            padding: 14,
+            marginBottom: 12,
+            boxShadow: '2px 2px 0 #080808',
+          }}>
+            <div style={{display:'flex', alignItems:'center', gap:8, marginBottom:10, flexWrap:'wrap'}}>
+              <span style={{fontSize:9, color:C.textDim, letterSpacing:2}}>YOUR BREAKS</span>
+              <label style={{
+                marginLeft:'auto', padding:'6px 12px',
+                background:'linear-gradient(to bottom, #252525, #1a1a1a)',
+                color: C.lcd, border:`1px solid ${C.border}`,
+                borderBottom:'2px solid #080808', borderRight:'2px solid #080808',
+                borderRadius:2, cursor:'pointer', fontSize:10, letterSpacing:1.5,
+                textShadow:`0 0 6px ${C.lcd}66`,
+                boxShadow:'1px 1px 0 #080808',
+              }}>
+                + ADD FILES
+                <input type="file" accept="audio/*" multiple onChange={handleFile} style={{display:'none'}} />
+              </label>
+            </div>
+
+            {sharedLibrary.length > 0 && (
+              <div style={{marginBottom:12}}>
+                <div style={{fontSize:8, color:C.lcdMid, letterSpacing:2, marginBottom:5}}>
+                  ★ SHARED BREAKS ({sharedLibrary.length})
+                </div>
+                <div style={{display:'flex', flexDirection:'column', gap:2, maxHeight:200, overflowY:'auto'}}>
+                  {sharedLibrary.map(item => (
+                    <div key={item.file} style={{
+                      display:'flex', alignItems:'center', gap:8, padding:'6px 10px',
+                      background: activeSharedId===item.file ? '#0a1a0a' : 'transparent',
+                      border: `1px solid ${activeSharedId===item.file ? '#1a4a1a' : C.border}`,
+                      borderRadius:2, cursor:'pointer',
+                    }} onClick={()=>selectFromShared(item)}>
+                      <span style={{fontSize:9, color: activeSharedId===item.file ? C.lcd : C.textDim,
+                        textShadow: activeSharedId===item.file ? `0 0 6px ${C.lcd}55` : 'none'}}>
+                        {activeSharedId===item.file ? '▶' : '·'}
+                      </span>
+                      <span style={{
+                        flex:1, fontSize:10,
+                        color: activeSharedId===item.file ? C.lcd : C.text,
+                        textShadow: activeSharedId===item.file ? `0 0 5px ${C.lcd}44` : 'none',
+                        overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap',
+                      }}>{item.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {sharedLibrary.length > 0 && (
+              <div style={{fontSize:8, color:C.textDim, letterSpacing:2, marginBottom:5}}>
+                YOUR UPLOADS ({library.length})
+              </div>
+            )}
+            {libLoading ? (
+              <div style={{color:C.textDim, fontSize:10, padding:16, textAlign:'center'}}>
+                LOADING...
+              </div>
+            ) : library.length === 0 ? (
+              <div style={{color:C.textDim, fontSize:10, padding:16, textAlign:'center', lineHeight:1.8}}>
+                {sharedLibrary.length > 0 ? 'NO PERSONAL UPLOADS YET' : 'NO BREAKS SAVED YET'}<br/>
+                <span style={{fontSize:9}}>add wav files to build your library</span>
+              </div>
+            ) : (
+              <div style={{display:'flex', flexDirection:'column', gap:2, maxHeight:220, overflowY:'auto'}}>
+                {library.map(item => (
+                  <div key={item.id} style={{
+                    display:'flex', alignItems:'center', gap:8, padding:'6px 10px',
+                    background: activeLibId===item.id ? '#1a0e06' : 'transparent',
+                    border: `1px solid ${activeLibId===item.id ? '#4a2a0a' : C.border}`,
+                    borderRadius:2, cursor:'pointer',
+                  }} onClick={()=>selectFromLibrary(item)}>
+                    {renamingId===item.id ? (
+                      <input
+                        value={renameText} onChange={e=>setRenameText(e.target.value)}
+                        onBlur={confirmRename}
+                        onKeyDown={e=>{if(e.key==='Enter')confirmRename();if(e.key==='Escape')setRenamingId(null);}}
+                        onClick={e=>e.stopPropagation()} autoFocus
+                        style={{flex:1,background:C.lcdBg,color:C.lcd,border:`1px solid #0e280e`,
+                          borderRadius:1,padding:'3px 6px',fontSize:10,fontFamily:'inherit',outline:'none'}}
+                      />
+                    ) : (
+                      <span style={{
+                        flex:1, fontSize:10,
+                        color: activeLibId===item.id ? C.accent : C.text,
+                        textShadow: activeLibId===item.id ? `0 0 5px ${C.accent}55` : 'none',
+                        overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap',
+                      }}>{activeLibId===item.id ? '▶ ' : '· '}{item.name}</span>
+                    )}
+                    <button onClick={e=>{e.stopPropagation();startRename(item,STORE_NAME);}}
+                      style={{background:'none',border:'none',color:C.textDim,cursor:'pointer',fontSize:10,padding:'2px 5px'}}>✎</button>
+                    <button onClick={e=>{e.stopPropagation();if(confirm(`Delete "${item.name}"?`))deleteFromLibrary(item.id);}}
+                      style={{background:'none',border:'none',color:'#663333',cursor:'pointer',fontSize:10,padding:'2px 5px'}}>✕</button>
                   </div>
                 ))}
-              </div>
-            </div>
-          )}
-
-          {/* User library section */}
-          {sharedLibrary.length > 0 && (
-            <div style={{fontSize:9,color:C.textDim,letterSpacing:1,marginBottom:6}}>
-              YOUR UPLOADS ({library.length})
-            </div>
-          )}
-          {libLoading ? (
-            <div style={{color:C.textDim,fontSize:11,padding:20,textAlign:'center'}}>Loading library...</div>
-          ) : library.length === 0 ? (
-            <div style={{color:C.textDim,fontSize:11,padding:20,textAlign:'center'}}>
-              {sharedLibrary.length > 0 ? 'No personal uploads yet. Add your own WAV files above.' : 'No breaks saved yet. Add some WAV files to build your library.'}
-              <br/>They'll persist between sessions.
-            </div>
-          ) : (
-            <div style={{display:'flex',flexDirection:'column',gap:4,maxHeight:240,overflowY:'auto'}}>
-              {library.map(item => (
-                <div key={item.id} style={{
-                  display:'flex',alignItems:'center',gap:8,padding:'8px 10px',
-                  background:activeLibId===item.id?`${C.accent}15`:'transparent',
-                  border:`1px solid ${activeLibId===item.id?C.accent+'44':C.border}`,
-                  borderRadius:6,cursor:'pointer',
-                }} onClick={()=>selectFromLibrary(item)}>
-                  {renamingId===item.id ? (
-                    <input
-                      value={renameText}
-                      onChange={e=>setRenameText(e.target.value)}
-                      onBlur={confirmRename}
-                      onKeyDown={e=>{if(e.key==='Enter')confirmRename();if(e.key==='Escape')setRenamingId(null);}}
-                      onClick={e=>e.stopPropagation()}
-                      autoFocus
-                      style={{flex:1,background:C.bg,color:C.text,border:`1px solid ${C.accent}`,borderRadius:4,padding:'4px 8px',fontSize:11,fontFamily:'inherit',outline:'none'}}
-                    />
-                  ) : (
-                    <span style={{flex:1,fontSize:11,color:activeLibId===item.id?C.accent:C.text,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>
-                      {item.name}
-                    </span>
-                  )}
-                  <button onClick={e=>{e.stopPropagation();startRename(item, STORE_NAME);}} style={{background:'none',border:'none',color:C.textDim,cursor:'pointer',fontSize:10,padding:'2px 6px'}}>✎</button>
-                  <button onClick={e=>{e.stopPropagation();if(confirm(`Delete "${item.name}"?`))deleteFromLibrary(item.id);}} style={{background:'none',border:'none',color:'#ff5252',cursor:'pointer',fontSize:10,padding:'2px 6px'}}>✕</button>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Patterns Panel */}
-      {showPatterns && (
-        <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:8,padding:16,marginBottom:16}}>
-          <div style={{display:'flex',alignItems:'center',gap:8,marginBottom:12,flexWrap:'wrap'}}>
-            <span style={{fontSize:11,color:C.textDim,letterSpacing:1}}>YOUR PATTERNS</span>
-            <button onClick={savePattern} style={{
-              marginLeft:'auto',padding:'6px 14px',background:C.cyan,color:'#000',
-              border:'none',borderRadius:6,cursor:'pointer',fontSize:11,fontWeight:600,
-            }}>
-              + SAVE CURRENT
-            </button>
-          </div>
-          {patterns.length === 0 ? (
-            <div style={{color:C.textDim,fontSize:11,padding:20,textAlign:'center'}}>
-              No patterns saved yet. Build a probability matrix and tap SAVE CURRENT.
-              <br/>Patterns store your grid, BPM, swing, chaos, and step count.
-            </div>
-          ) : (
-            <div style={{display:'flex',flexDirection:'column',gap:4,maxHeight:240,overflowY:'auto'}}>
-              {patterns.map(item => (
-                <div key={item.id} style={{
-                  display:'flex',alignItems:'center',gap:8,padding:'8px 10px',
-                  background:'transparent',
-                  border:`1px solid ${C.border}`,
-                  borderRadius:6,cursor:'pointer',
-                }} onClick={()=>loadPattern(item)}>
-                  {renamingId===item.id && renameStore===PATTERN_STORE ? (
-                    <input
-                      value={renameText}
-                      onChange={e=>setRenameText(e.target.value)}
-                      onBlur={confirmRename}
-                      onKeyDown={e=>{if(e.key==='Enter')confirmRename();if(e.key==='Escape')setRenamingId(null);}}
-                      onClick={e=>e.stopPropagation()}
-                      autoFocus
-                      style={{flex:1,background:C.bg,color:C.text,border:`1px solid ${C.cyan}`,borderRadius:4,padding:'4px 8px',fontSize:11,fontFamily:'inherit',outline:'none'}}
-                    />
-                  ) : (
-                    <>
-                      <span style={{flex:1,fontSize:11,color:C.text,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>
-                        {item.name}
-                      </span>
-                      <span style={{fontSize:9,color:C.textDim}}>
-                        {item.numSteps}st • {item.numSlices}sl • {item.bpm}bpm
-                      </span>
-                    </>
-                  )}
-                  <button onClick={e=>{e.stopPropagation();startRename(item, PATTERN_STORE);}} style={{background:'none',border:'none',color:C.textDim,cursor:'pointer',fontSize:10,padding:'2px 6px'}}>✎</button>
-                  <button onClick={e=>{e.stopPropagation();if(confirm(`Delete "${item.name}"?`))deletePattern(item.id);}} style={{background:'none',border:'none',color:'#ff5252',cursor:'pointer',fontSize:10,padding:'2px 6px'}}>✕</button>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Source controls */}
-      <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:8,padding:16,marginBottom:16}}>
-        <div style={{display:'flex',alignItems:'center',gap:8,marginBottom:waveformData?12:0,flexWrap:'wrap'}}>
-          <label style={{padding:'8px 16px',background:audioBuffer?C.border:C.accent,color:audioBuffer?C.text:'#fff',borderRadius:6,cursor:'pointer',fontSize:12,fontWeight:500}}>
-            {audioBuffer?'ADD MORE':'LOAD BREAKS'}
-            <input type="file" accept="audio/*" multiple onChange={handleFile} style={{display:'none'}} />
-          </label>
-          <span style={{color:C.textDim,fontSize:11}}>or</span>
-          <button onClick={isRecording?stopRecording:startRecording} style={{
-            padding:'8px 16px',background:isRecording?'#ff1744':C.surface,
-            color:isRecording?'#fff':C.text,border:`1px solid ${isRecording?'#ff1744':C.border}`,
-            borderRadius:6,cursor:'pointer',fontSize:12,fontWeight:500,
-            animation:isRecording?'recPulse 1s ease-in-out infinite':'none',
-          }}>
-            {isRecording?`■ STOP REC (${recSeconds}s)`:'● REC'}
-          </button>
-          {audioBuffer && (
-            <button onClick={togglePreview} style={{
-              padding:'8px 14px',background:isPreviewing?C.warm:C.surface,
-              color:isPreviewing?'#000':C.text,border:`1px solid ${isPreviewing?C.warm:C.border}`,
-              borderRadius:6,cursor:'pointer',fontSize:12,fontWeight:500,
-            }}>
-              {isPreviewing?'■ STOP':'▶ PREVIEW'}
-            </button>
-          )}
-          {(activeLibId != null || activeSharedId != null) && audioBuffer && (
-            <button onClick={saveBreakState} style={{
-              padding:'8px 14px',background:savedFlash?C.green:C.surface,
-              color:savedFlash?'#000':C.text,border:`1px solid ${savedFlash?C.green:C.border}`,
-              borderRadius:6,cursor:'pointer',fontSize:12,fontWeight:500,transition:'all 0.2s',
-            }}>
-              {savedFlash ? '✓ SAVED' : 'SAVE STATE'}
-            </button>
-          )}
-          {audioBuffer && (
-            <button onClick={()=>setCopiedConfig(copiedConfig?null:{cropStart,cropEnd,numSlices,numSteps})} style={{
-              padding:'8px 14px',background:copiedConfig?C.cyan:C.surface,
-              color:copiedConfig?'#000':C.text,border:`1px solid ${copiedConfig?C.cyan:C.border}`,
-              borderRadius:6,cursor:'pointer',fontSize:12,fontWeight:500,transition:'all 0.2s',
-            }}>
-              {copiedConfig?'✓ CFG LOCKED':'COPY CFG'}
-            </button>
-          )}
-          {fileName && <span style={{color:C.textDim,fontSize:12}}>{fileName}</span>}
-          {audioBuffer && <span style={{color:C.textDim,fontSize:11,marginLeft:'auto'}}>{audioBuffer.duration.toFixed(2)}s • {audioBuffer.sampleRate}Hz</span>}
-        </div>
-
-        {waveformData && (
-          <div ref={waveformContainerRef} onPointerDown={handleWaveformPointerDown}
-            style={{position:'relative',height:90,cursor:dragging?'ew-resize':'default',touchAction:'none'}}>
-            <svg width="100%" height="90" viewBox="0 0 600 90" preserveAspectRatio="none" style={{display:'block'}}>
-              {/* Dimmed crop-out regions */}
-              <rect x={0} y={0} width={cropStart*600} height={90} fill="rgba(0,0,0,0.65)"/>
-              <rect x={cropEnd*600} y={0} width={(1-cropEnd)*600} height={90} fill="rgba(0,0,0,0.65)"/>
-              {/* Waveform bars */}
-              {waveformData.map((v,i)=>{
-                const frac=i/waveformData.length;
-                const inC=frac>=cropStart&&frac<=cropEnd;
-                const x=frac*600;
-                return <rect key={i} x={x} y={45-v*40} width={600/waveformData.length} height={Math.max(0.5,v*80)} fill={inC?C.accent:C.textDim} opacity={inC?0.75:0.18}/>;
-              })}
-              {/* Slice markers */}
-              {Array.from({length:numSlices+1}).map((_,i)=>{
-                const f=cropStart+(i/numSlices)*(cropEnd-cropStart);
-                return <line key={i} x1={f*600} y1={0} x2={f*600} y2={90} stroke={C.warm} strokeWidth={0.6} opacity={0.45}/>;
-              })}
-              {/* Crop handles - thin lines, translucent */}
-              <line x1={cropStart*600} y1={0} x2={cropStart*600} y2={90} stroke={C.cyan} strokeWidth={0.8} opacity={0.85}/>
-              <line x1={cropEnd*600} y1={0} x2={cropEnd*600} y2={90} stroke={C.cyan} strokeWidth={0.8} opacity={0.85}/>
-              {/* Tiny grip indicators at top/bottom */}
-              <circle cx={cropStart*600} cy={4} r={2} fill={C.cyan} opacity={0.9}/>
-              <circle cx={cropStart*600} cy={86} r={2} fill={C.cyan} opacity={0.9}/>
-              <circle cx={cropEnd*600} cy={4} r={2} fill={C.cyan} opacity={0.9}/>
-              <circle cx={cropEnd*600} cy={86} r={2} fill={C.cyan} opacity={0.9}/>
-              {/* Wider invisible hit areas for easier dragging */}
-              <rect x={cropStart*600-8} y={0} width={16} height={90} fill="transparent" style={{cursor:'ew-resize'}}/>
-              <rect x={cropEnd*600-8} y={0} width={16} height={90} fill="transparent" style={{cursor:'ew-resize'}}/>
-            </svg>
-            {(cropStart>0||cropEnd<1)&&rawBuffer&&(
-              <div style={{position:'absolute',bottom:2,right:4,fontSize:9,color:C.cyan,opacity:0.8}}>
-                CROP: {(cropStart*rawBuffer.duration).toFixed(2)}s — {(cropEnd*rawBuffer.duration).toFixed(2)}s
               </div>
             )}
           </div>
         )}
-      </div>
 
-      {/* Controls */}
-      <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(120px,1fr))',gap:10,marginBottom:16}}>
-        <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:6,padding:'10px 12px'}}>
-          <div style={{display:'flex',justifyContent:'space-between',marginBottom:8,alignItems:'baseline'}}>
-            <span style={{fontSize:9,color:C.textDim,letterSpacing:1}}>BPM</span>
-            <span style={{fontSize:13,color:C.accent,fontWeight:700}}>{bpm}</span>
+        {/* ── PATTERNS PANEL ── */}
+        {showPatterns && (
+          <div style={{
+            background: C.panelDark,
+            border: `1px solid ${C.border}`,
+            borderTop: `1px solid ${C.borderHi}`,
+            borderLeft: `1px solid ${C.borderHi}`,
+            borderRadius: 2,
+            padding: 14,
+            marginBottom: 12,
+            boxShadow: '2px 2px 0 #080808',
+          }}>
+            <div style={{display:'flex', alignItems:'center', gap:8, marginBottom:10, flexWrap:'wrap'}}>
+              <span style={{fontSize:9, color:C.textDim, letterSpacing:2}}>PATTERNS</span>
+              <button onClick={savePattern} style={{
+                marginLeft:'auto', padding:'6px 12px',
+                background:'linear-gradient(to bottom, #252525, #1a1a1a)',
+                color: C.cyan, border:`1px solid ${C.border}`,
+                borderBottom:'2px solid #080808', borderRight:'2px solid #080808',
+                borderRadius:2, cursor:'pointer', fontSize:10, letterSpacing:1.5,
+                textShadow:`0 0 6px ${C.cyan}66`,
+                boxShadow:'1px 1px 0 #080808',
+              }}>+ SAVE CURRENT</button>
+            </div>
+            {patterns.length === 0 ? (
+              <div style={{color:C.textDim, fontSize:10, padding:16, textAlign:'center', lineHeight:1.8}}>
+                NO PATTERNS SAVED<br/>
+                <span style={{fontSize:9}}>build a matrix and tap save current</span>
+              </div>
+            ) : (
+              <div style={{display:'flex', flexDirection:'column', gap:2, maxHeight:220, overflowY:'auto'}}>
+                {patterns.map(item => (
+                  <div key={item.id} style={{
+                    display:'flex', alignItems:'center', gap:8, padding:'6px 10px',
+                    background:'transparent', border:`1px solid ${C.border}`,
+                    borderRadius:2, cursor:'pointer',
+                  }} onClick={()=>loadPattern(item)}>
+                    {renamingId===item.id&&renameStore===PATTERN_STORE ? (
+                      <input
+                        value={renameText} onChange={e=>setRenameText(e.target.value)}
+                        onBlur={confirmRename}
+                        onKeyDown={e=>{if(e.key==='Enter')confirmRename();if(e.key==='Escape')setRenamingId(null);}}
+                        onClick={e=>e.stopPropagation()} autoFocus
+                        style={{flex:1,background:C.lcdBg,color:C.lcd,border:`1px solid #0e280e`,
+                          borderRadius:1,padding:'3px 6px',fontSize:10,fontFamily:'inherit',outline:'none'}}
+                      />
+                    ) : (
+                      <>
+                        <span style={{flex:1, fontSize:10, color:C.text, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap'}}>
+                          · {item.name}
+                        </span>
+                        <span style={{fontSize:8, color:C.textDim, letterSpacing:1}}>
+                          {item.numSteps}ST {item.numSlices}SL {item.bpm}BPM
+                        </span>
+                      </>
+                    )}
+                    <button onClick={e=>{e.stopPropagation();startRename(item,PATTERN_STORE);}}
+                      style={{background:'none',border:'none',color:C.textDim,cursor:'pointer',fontSize:10,padding:'2px 5px'}}>✎</button>
+                    <button onClick={e=>{e.stopPropagation();if(confirm(`Delete "${item.name}"?`))deletePattern(item.id);}}
+                      style={{background:'none',border:'none',color:'#663333',cursor:'pointer',fontSize:10,padding:'2px 5px'}}>✕</button>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-          <input type="range" min={60} max={200} step={1} value={bpm} onChange={e=>setBpm(+e.target.value)} />
+        )}
+
+        {/* ── SOURCE PANEL ── */}
+        <div style={{
+          background: C.panelDark,
+          border: `1px solid ${C.border}`,
+          borderTop: `1px solid ${C.borderHi}`,
+          borderLeft: `1px solid ${C.borderHi}`,
+          borderRadius: 2,
+          padding: '12px 14px',
+          marginBottom: 10,
+          boxShadow: '2px 2px 0 #080808',
+        }}>
+          <div style={{display:'flex', alignItems:'center', gap:8, marginBottom: waveformData ? 12 : 0, flexWrap:'wrap'}}>
+            <label style={{
+              padding:'8px 14px',
+              background: audioBuffer ? 'linear-gradient(to bottom,#252525,#1a1a1a)' : `linear-gradient(to bottom, #2a1a00, #1e1200)`,
+              color: audioBuffer ? C.text : C.accent,
+              border: `1px solid ${audioBuffer ? C.border : '#4a2a00'}`,
+              borderBottom:'2px solid #080808', borderRight:'2px solid #080808',
+              borderRadius:2, cursor:'pointer', fontSize:10, letterSpacing:1.5,
+              textShadow: audioBuffer ? 'none' : `0 0 8px ${C.accent}77`,
+              boxShadow:'1px 1px 0 #080808',
+            }}>
+              {audioBuffer ? 'ADD FILES' : 'LOAD BREAKS'}
+              <input type="file" accept="audio/*" multiple onChange={handleFile} style={{display:'none'}} />
+            </label>
+
+            <span style={{color:C.textDim, fontSize:9}}>OR</span>
+
+            <button onClick={isRecording?stopRecording:startRecording} style={{
+              padding:'8px 14px',
+              background: isRecording ? '#2a0505' : 'linear-gradient(to bottom,#252525,#1a1a1a)',
+              color: isRecording ? C.ledRed : C.text,
+              border: `1px solid ${isRecording ? '#660000' : C.border}`,
+              borderBottom:'2px solid #080808', borderRight:'2px solid #080808',
+              borderRadius:2, cursor:'pointer', fontSize:10, letterSpacing:1.5,
+              textShadow: isRecording ? `0 0 8px ${C.ledRed}88` : 'none',
+              animation: isRecording ? 'recPulse 1s ease-in-out infinite' : 'none',
+              boxShadow: isRecording ? `0 0 8px #ff220044` : '1px 1px 0 #080808',
+            }}>
+              {isRecording ? `■ STOP (${recSeconds}s)` : '● REC'}
+            </button>
+
+            {audioBuffer && hwBtn(isPreviewing ? '■ STOP' : '▶ PREVIEW', togglePreview, {active:isPreviewing, activeColor:C.accent})}
+
+            {(activeLibId!=null||activeSharedId!=null) && audioBuffer && hwBtn(
+              savedFlash ? '✓ SAVED' : 'SAVE STATE',
+              saveBreakState,
+              {active:savedFlash, activeColor:C.ledGreen}
+            )}
+
+            {audioBuffer && hwBtn(
+              copiedConfig ? '✓ CFG LOCK' : 'COPY CFG',
+              ()=>setCopiedConfig(copiedConfig?null:{cropStart,cropEnd,numSlices,numSteps}),
+              {active:!!copiedConfig, activeColor:C.cyan}
+            )}
+
+            {audioBuffer && (
+              <span style={{color:C.textDim, fontSize:9, marginLeft:'auto', letterSpacing:1}}>
+                {audioBuffer.duration.toFixed(2)}S {audioBuffer.sampleRate}HZ
+              </span>
+            )}
+          </div>
+
+          {/* Waveform / oscilloscope */}
+          {waveformData && (
+            <div ref={waveformContainerRef} onPointerDown={handleWaveformPointerDown}
+              style={{position:'relative', cursor:dragging?'ew-resize':'default', touchAction:'none'}}>
+              <svg width="100%" height="88" viewBox="0 0 600 88" preserveAspectRatio="none"
+                style={{display:'block', border:`1px solid #0e280e`, boxShadow:`inset 0 0 30px #000800`}}>
+                <rect width={600} height={88} fill={C.lcdBg}/>
+                {/* CRT scanlines */}
+                {Array.from({length:22}).map((_,i)=>(
+                  <line key={i} x1={0} y1={i*4} x2={600} y2={i*4} stroke="#000" strokeWidth={0.5} opacity={0.35}/>
+                ))}
+                {/* Dim out-of-crop */}
+                <rect x={0} y={0} width={cropStart*600} height={88} fill="rgba(0,0,0,0.78)"/>
+                <rect x={cropEnd*600} y={0} width={(1-cropEnd)*600} height={88} fill="rgba(0,0,0,0.78)"/>
+                {/* Waveform */}
+                {waveformData.map((v,i)=>{
+                  const frac=i/waveformData.length;
+                  const inC=frac>=cropStart&&frac<=cropEnd;
+                  const x=frac*600;
+                  const h=Math.max(0.5,v*78);
+                  return <rect key={i} x={x} y={44-v*39} width={Math.max(1,600/waveformData.length-0.3)} height={h}
+                    fill={inC?C.lcd:'#1a5a2a'} opacity={inC?0.82:0.3}/>;
+                })}
+                {/* Slice markers */}
+                {Array.from({length:numSlices+1}).map((_,i)=>{
+                  const f=cropStart+(i/numSlices)*(cropEnd-cropStart);
+                  return <line key={i} x1={f*600} y1={0} x2={f*600} y2={88}
+                    stroke={C.accent} strokeWidth={0.5} opacity={0.35}/>;
+                })}
+                {/* Center line */}
+                <line x1={0} y1={44} x2={600} y2={44} stroke={C.lcdDim} strokeWidth={0.5} opacity={0.5}/>
+                {/* Crop handles */}
+                <line x1={cropStart*600} y1={0} x2={cropStart*600} y2={88} stroke={C.accent} strokeWidth={1.5} opacity={0.9}/>
+                <line x1={cropEnd*600} y1={0} x2={cropEnd*600} y2={88} stroke={C.accent} strokeWidth={1.5} opacity={0.9}/>
+                <circle cx={cropStart*600} cy={4} r={3} fill={C.accent} opacity={0.9}/>
+                <circle cx={cropStart*600} cy={84} r={3} fill={C.accent} opacity={0.9}/>
+                <circle cx={cropEnd*600} cy={4} r={3} fill={C.accent} opacity={0.9}/>
+                <circle cx={cropEnd*600} cy={84} r={3} fill={C.accent} opacity={0.9}/>
+                <rect x={cropStart*600-8} y={0} width={16} height={88} fill="transparent" style={{cursor:'ew-resize'}}/>
+                <rect x={cropEnd*600-8} y={0} width={16} height={88} fill="transparent" style={{cursor:'ew-resize'}}/>
+              </svg>
+              {(cropStart>0||cropEnd<1)&&rawBuffer&&(
+                <div style={{position:'absolute',bottom:4,right:6,fontSize:8,color:C.lcdMid,letterSpacing:1}}>
+                  {(cropStart*rawBuffer.duration).toFixed(2)}S — {(cropEnd*rawBuffer.duration).toFixed(2)}S
+                </div>
+              )}
+            </div>
+          )}
         </div>
-        <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:6,padding:'10px 12px'}}>
-          <div style={{display:'flex',justifyContent:'space-between',marginBottom:8,alignItems:'baseline'}}>
-            <span style={{fontSize:9,color:C.textDim,letterSpacing:1}}>SLICES</span>
-            <span style={{fontSize:13,color:C.accent,fontWeight:700}}>{numSlices}</span>
+
+        {/* ── CONTROLS ROW ── */}
+        <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(110px,1fr))', gap:8, marginBottom:10}}>
+
+          {/* BPM */}
+          <div style={{background:C.panelDark,border:`1px solid ${C.border}`,borderTop:`1px solid ${C.borderHi}`,borderLeft:`1px solid ${C.borderHi}`,borderRadius:2,padding:'10px 12px',boxShadow:'2px 2px 0 #080808'}}>
+            <div style={{fontSize:9,color:C.textDim,letterSpacing:2,marginBottom:5}}>BPM</div>
+            <div style={{background:C.lcdBg,border:'1px solid #0e280e',padding:'3px 8px',marginBottom:8,textAlign:'right',fontSize:17,color:C.lcd,textShadow:`0 0 8px ${C.lcd}55`,boxShadow:'inset 0 0 12px #000a00',letterSpacing:2}}>{bpm}</div>
+            <input type="range" min={60} max={200} step={1} value={bpm} onChange={e=>setBpm(+e.target.value)} />
           </div>
-          <input type="range" min={4} max={32} step={1} value={numSlices} onChange={e=>handleSlicesChange(+e.target.value)} />
-          <div style={{display:'flex',gap:3,marginTop:6}}>
-            {[4,8,16,32].map(n=>(
-              <button key={n} onClick={()=>handleSlicesChange(n)} style={{
-                flex:1,padding:'3px 0',fontSize:9,background:numSlices===n?C.accent:'transparent',
-                color:numSlices===n?'#fff':C.textDim,border:`1px solid ${numSlices===n?C.accent:C.border}`,
-                borderRadius:3,cursor:'pointer',fontFamily:'inherit',
-              }}>{n}</button>
+
+          {/* SLICES */}
+          <div style={{background:C.panelDark,border:`1px solid ${C.border}`,borderTop:`1px solid ${C.borderHi}`,borderLeft:`1px solid ${C.borderHi}`,borderRadius:2,padding:'10px 12px',boxShadow:'2px 2px 0 #080808'}}>
+            <div style={{fontSize:9,color:C.textDim,letterSpacing:2,marginBottom:5}}>SLICES</div>
+            <div style={{background:C.lcdBg,border:'1px solid #0e280e',padding:'3px 8px',marginBottom:8,textAlign:'right',fontSize:17,color:C.lcd,textShadow:`0 0 8px ${C.lcd}55`,boxShadow:'inset 0 0 12px #000a00',letterSpacing:2}}>{numSlices}</div>
+            <input type="range" min={4} max={32} step={1} value={numSlices} onChange={e=>handleSlicesChange(+e.target.value)} />
+            <div style={{display:'flex',gap:3,marginTop:6}}>
+              {[4,8,16,32].map(n=>(
+                <button key={n} onClick={()=>handleSlicesChange(n)} style={{
+                  flex:1,padding:'3px 0',fontSize:8,
+                  background:numSlices===n?C.lcdBg:'transparent',
+                  color:numSlices===n?C.lcd:C.textDim,
+                  border:`1px solid ${numSlices===n?'#1a4a1a':C.border}`,
+                  borderRadius:1,cursor:'pointer',fontFamily:'inherit',
+                  textShadow:numSlices===n?`0 0 5px ${C.lcd}55`:'none',
+                }}>{n}</button>
+              ))}
+            </div>
+          </div>
+
+          {/* SWING */}
+          <div style={{background:C.panelDark,border:`1px solid ${C.border}`,borderTop:`1px solid ${C.borderHi}`,borderLeft:`1px solid ${C.borderHi}`,borderRadius:2,padding:'10px 12px',boxShadow:'2px 2px 0 #080808'}}>
+            <div style={{fontSize:9,color:C.textDim,letterSpacing:2,marginBottom:5}}>SWING</div>
+            <div style={{background:C.lcdBg,border:'1px solid #0e280e',padding:'3px 8px',marginBottom:8,textAlign:'right',fontSize:17,color:C.lcd,textShadow:`0 0 8px ${C.lcd}55`,boxShadow:'inset 0 0 12px #000a00',letterSpacing:2}}>{Math.round(swing*100)}<span style={{fontSize:10,marginLeft:2,color:C.lcdMid}}>%</span></div>
+            <input type="range" min={0} max={1} step={0.01} value={swing} onChange={e=>setSwing(+e.target.value)} />
+          </div>
+
+          {/* CHAOS */}
+          <div style={{background:C.panelDark,border:`1px solid ${C.border}`,borderTop:`1px solid ${C.borderHi}`,borderLeft:`1px solid ${C.borderHi}`,borderRadius:2,padding:'10px 12px',boxShadow:'2px 2px 0 #080808'}}>
+            <div style={{fontSize:9,color:C.textDim,letterSpacing:2,marginBottom:5}}>CHAOS</div>
+            <div style={{background:C.lcdBg,border:'1px solid #0e280e',padding:'3px 8px',marginBottom:8,textAlign:'right',fontSize:17,color:C.lcd,textShadow:`0 0 8px ${C.lcd}55`,boxShadow:'inset 0 0 12px #000a00',letterSpacing:2}}>{Math.round(chaos*100)}<span style={{fontSize:10,marginLeft:2,color:C.lcdMid}}>%</span></div>
+            <input type="range" min={0} max={1} step={0.01} value={chaos} onChange={e=>setChaos(+e.target.value)} />
+          </div>
+
+          {/* VOL */}
+          <div style={{background:C.panelDark,border:`1px solid ${C.border}`,borderTop:`1px solid ${C.borderHi}`,borderLeft:`1px solid ${C.borderHi}`,borderRadius:2,padding:'10px 12px',boxShadow:'2px 2px 0 #080808'}}>
+            <div style={{fontSize:9,color:C.textDim,letterSpacing:2,marginBottom:5}}>VOL</div>
+            <div style={{background:C.lcdBg,border:'1px solid #0e280e',padding:'3px 8px',marginBottom:8,textAlign:'right',fontSize:17,color:C.lcd,textShadow:`0 0 8px ${C.lcd}55`,boxShadow:'inset 0 0 12px #000a00',letterSpacing:2}}>{Math.round(volume*100)}<span style={{fontSize:10,marginLeft:2,color:C.lcdMid}}>%</span></div>
+            <input type="range" min={0} max={1} step={0.01} value={volume} onChange={e=>setVolume(+e.target.value)} />
+          </div>
+        </div>
+
+        {/* ── TRANSPORT ── */}
+        <div style={{display:'flex', gap:6, marginBottom:12, flexWrap:'wrap', alignItems:'center'}}>
+
+          {/* PLAY/STOP — big button */}
+          <button onClick={isPlaying?stopPlayback:startPlayback} disabled={!audioBuffer} style={{
+            padding:'10px 28px',
+            background: isPlaying
+              ? 'linear-gradient(to bottom, #2a0a0a, #1e0808)'
+              : audioBuffer
+                ? 'linear-gradient(to bottom, #0a2a12, #071e0c)'
+                : 'linear-gradient(to bottom, #1a1a1a, #141414)',
+            color: isPlaying ? C.ledRed : audioBuffer ? C.ledGreen : C.textDim,
+            border: `1px solid ${isPlaying ? '#550000' : audioBuffer ? '#1a5a28' : C.border}`,
+            borderBottom: isPlaying ? '3px solid #2a0000' : audioBuffer ? '3px solid #0a3014' : `2px solid #080808`,
+            borderRight: isPlaying ? '3px solid #2a0000' : audioBuffer ? '3px solid #0a3014' : `2px solid #080808`,
+            borderRadius: 2,
+            fontSize: 12,
+            letterSpacing: 2,
+            cursor: audioBuffer ? 'pointer' : 'not-allowed',
+            opacity: audioBuffer ? 1 : 0.35,
+            textShadow: isPlaying ? `0 0 10px ${C.ledRed}88` : audioBuffer ? `0 0 10px ${C.ledGreen}88` : 'none',
+            boxShadow: isPlaying
+              ? `0 0 12px #ff220033, 1px 1px 0 #080808`
+              : audioBuffer ? `0 0 10px #00ff4422, 1px 1px 0 #080808` : '1px 1px 0 #080808',
+          }}>
+            {isPlaying ? '■ STOP' : '▶ PLAY'}
+          </button>
+
+          {hwBtn('RANDOM', randomize)}
+          {hwBtn('DIAGONAL', fillDiagonal)}
+          {hwBtn(
+            `${numSteps} STEPS`, toggleSteps,
+            {active: numSteps!==16, activeColor: numSteps===8 ? C.cyan : C.accent}
+          )}
+          {hwBtn('RESET', resetGrid)}
+
+          <button onClick={isCapturing?stopCapture:startCapture} disabled={!isPlaying&&!isCapturing} style={{
+            padding:'10px 14px',
+            background: isCapturing ? '#2a0505' : 'linear-gradient(to bottom,#252525,#1a1a1a)',
+            color: isCapturing ? C.ledRed : C.text,
+            border: `1px solid ${isCapturing ? '#660000' : C.border}`,
+            borderBottom:'2px solid #080808', borderRight:'2px solid #080808',
+            borderRadius:2, fontSize:10, letterSpacing:1.5,
+            cursor: (isPlaying||isCapturing) ? 'pointer' : 'not-allowed',
+            opacity: (isPlaying||isCapturing) ? 1 : 0.35,
+            marginLeft:'auto',
+            textShadow: isCapturing ? `0 0 8px ${C.ledRed}88` : 'none',
+            animation: isCapturing ? 'recPulse 1s ease-in-out infinite' : 'none',
+            boxShadow: isCapturing ? `0 0 8px #ff220033` : '1px 1px 0 #080808',
+          }}>
+            {isCapturing ? `■ SAVE (${captureSeconds}s)` : '⏺ EXPORT'}
+          </button>
+        </div>
+
+        {/* ── PROBABILITY MATRIX ── */}
+        <div style={{
+          background: C.panelDark,
+          border: `1px solid ${C.border}`,
+          borderTop: `1px solid ${C.borderHi}`,
+          borderLeft: `1px solid ${C.borderHi}`,
+          borderRadius: 2,
+          padding: '12px 12px 10px',
+          overflowX: 'auto',
+          boxShadow: '2px 2px 0 #080808',
+        }}>
+          <div style={{fontSize:8, color:C.textDim, marginBottom:8, letterSpacing:2}}>
+            PROBABILITY MATRIX — ROWS = SLICES · COLS = STEPS · COLS NORMALIZE TO 100%
+          </div>
+
+          {/* Step headers */}
+          <div style={{display:'flex', gap:2, marginBottom:3, paddingLeft:36}}>
+            {Array.from({length:numSteps}).map((_,step)=>(
+              <div key={step} style={{
+                width: numSteps>16?17:22, minWidth: numSteps>16?17:22,
+                textAlign:'center', fontSize:8,
+                color: currentStep===step ? C.accent : C.textDim,
+                textShadow: currentStep===step ? `0 0 6px ${C.accent}88` : 'none',
+                fontWeight: currentStep===step ? 700 : 400,
+                marginLeft: numSteps>16&&step===16 ? 6 : 0,
+              }}>{step+1}</div>
+            ))}
+          </div>
+
+          {/* Slice rows */}
+          {Array.from({length:numSlices}).map((_,slice)=>(
+            <div key={slice} style={{display:'flex', gap:2, alignItems:'center', marginBottom:2}}>
+              <div style={{width:32,minWidth:32,textAlign:'right',paddingRight:6,fontSize:9,color:C.warm,letterSpacing:0.5}}>
+                S{slice+1}
+              </div>
+              {grid.map((row,step)=>{
+                const prob=row[slice];
+                const isActiveCell=currentStep===step&&lastPickedSlice===slice;
+                const cellW = numSteps>16?17:22;
+                return (
+                  <div key={step} onClick={()=>setCellProb(step,slice)} style={{
+                    width:cellW, minWidth:cellW, height:22,
+                    background: isActiveCell
+                      ? `rgba(255,140,0,0.45)`
+                      : heatColor(prob),
+                    border: `1px solid ${isActiveCell ? C.accent : prob>0 ? '#3a2800' : '#1a1a1a'}`,
+                    borderTop: `1px solid ${prob>0 ? '#2a2000' : '#202020'}`,
+                    borderLeft: `1px solid ${prob>0 ? '#2a2000' : '#202020'}`,
+                    borderRadius: 1,
+                    cursor: 'pointer',
+                    display:'flex', alignItems:'center', justifyContent:'center',
+                    fontSize: 7,
+                    color: isActiveCell ? '#fff' : prob>0.6 ? '#ffdd88' : prob>0 ? '#aa7700' : C.textDim,
+                    userSelect:'none',
+                    boxShadow: isActiveCell
+                      ? `0 0 6px ${C.accent}99, inset -1px -1px 2px #000`
+                      : prob>0
+                        ? `0 0 ${Math.round(prob*5)}px rgba(255,160,0,${prob*0.35}), inset -1px -1px 2px #000`
+                        : 'inset 1px 1px 2px #000, inset -1px -1px 1px #181818',
+                    marginLeft: numSteps>16&&step===16 ? 6 : 0,
+                  }}>
+                    {prob>0.04 ? Math.round(prob*100) : ''}
+                  </div>
+                );
+              })}
+            </div>
+          ))}
+
+          {/* REV row */}
+          <div style={{display:'flex', gap:2, alignItems:'center', marginTop:6, paddingTop:6, borderTop:`1px solid ${C.border}`}}>
+            <div style={{width:32,minWidth:32,textAlign:'right',paddingRight:6,fontSize:9,color:C.textDim}}>REV</div>
+            {Array.from({length:numSteps}).map((_,step)=>(
+              <div key={step} onClick={()=>toggleReverse(step)} style={{
+                width: numSteps>16?17:22, minWidth: numSteps>16?17:22, height:22,
+                background: reverse[step] ? '#1a0800' : 'transparent',
+                border: `1px solid ${reverse[step] ? '#3a1800' : '#1a1a1a'}`,
+                borderRadius:1, cursor:'pointer',
+                display:'flex', alignItems:'center', justifyContent:'center',
+                fontSize:10,
+                color: reverse[step] ? C.warm : C.textDim,
+                userSelect:'none',
+                textShadow: reverse[step] ? `0 0 5px ${C.warm}66` : 'none',
+                boxShadow: reverse[step]
+                  ? `0 0 4px rgba(255,100,0,0.3), inset -1px -1px 2px #000`
+                  : 'inset 1px 1px 2px #000, inset -1px -1px 1px #181818',
+                marginLeft: numSteps>16&&step===16 ? 6 : 0,
+              }}>
+                {reverse[step] ? '◄' : ''}
+              </div>
             ))}
           </div>
         </div>
-        <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:6,padding:'10px 12px'}}>
-          <div style={{display:'flex',justifyContent:'space-between',marginBottom:8,alignItems:'baseline'}}>
-            <span style={{fontSize:9,color:C.textDim,letterSpacing:1}}>SWING</span>
-            <span style={{fontSize:13,color:C.accent,fontWeight:700}}>{Math.round(swing*100)}%</span>
-          </div>
-          <input type="range" min={0} max={1} step={0.01} value={swing} onChange={e=>setSwing(+e.target.value)} />
-        </div>
-        <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:6,padding:'10px 12px'}}>
-          <div style={{display:'flex',justifyContent:'space-between',marginBottom:8,alignItems:'baseline'}}>
-            <span style={{fontSize:9,color:C.textDim,letterSpacing:1}}>CHAOS</span>
-            <span style={{fontSize:13,color:C.accent,fontWeight:700}}>{Math.round(chaos*100)}%</span>
-          </div>
-          <input type="range" min={0} max={1} step={0.01} value={chaos} onChange={e=>setChaos(+e.target.value)} />
-        </div>
-        <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:6,padding:'10px 12px'}}>
-          <div style={{display:'flex',justifyContent:'space-between',marginBottom:8,alignItems:'baseline'}}>
-            <span style={{fontSize:9,color:C.textDim,letterSpacing:1}}>VOL</span>
-            <span style={{fontSize:13,color:C.accent,fontWeight:700}}>{Math.round(volume*100)}%</span>
-          </div>
-          <input type="range" min={0} max={1} step={0.01} value={volume} onChange={e=>setVolume(+e.target.value)} />
-        </div>
-      </div>
 
-      {/* Transport */}
-      <div style={{display:'flex',gap:8,marginBottom:16,flexWrap:'wrap'}}>
-        <button onClick={isPlaying?stopPlayback:startPlayback} disabled={!audioBuffer} style={{
-          padding:'10px 28px',background:isPlaying?C.accent:C.green,color:'#000',border:'none',
-          borderRadius:6,fontSize:13,fontWeight:700,cursor:audioBuffer?'pointer':'not-allowed',
-          opacity:audioBuffer?1:0.3,letterSpacing:1,
-          boxShadow:isPlaying?`0 0 20px ${C.accentGlow}`:`0 0 20px ${C.greenDim}`,
-        }}>
-          {isPlaying?'■ STOP':'▶ PLAY'}
-        </button>
-        {btn('RANDOM',randomize)}
-        {btn('DIAGONAL',fillDiagonal)}
-        {btn(`${numSteps} STEPS`, toggleSteps, {background:numSteps===8?C.cyan:numSteps===32?C.warm:C.surface, color:numSteps!==16?'#000':C.text, borderColor:numSteps===8?C.cyan:numSteps===32?C.warm:C.border})}
-        {btn('RESET',resetGrid)}
-        <button onClick={isCapturing?stopCapture:startCapture} disabled={!isPlaying&&!isCapturing} style={{
-          padding:'10px 16px',background:isCapturing?'#ff1744':C.surface,
-          color:isCapturing?'#fff':C.text,border:`1px solid ${isCapturing?'#ff1744':C.border}`,
-          borderRadius:6,fontSize:11,fontWeight:500,cursor:(isPlaying||isCapturing)?'pointer':'not-allowed',
-          opacity:(isPlaying||isCapturing)?1:0.35,letterSpacing:1,marginLeft:'auto',
-          animation:isCapturing?'recPulse 1s ease-in-out infinite':'none',
-        }}>
-          {isCapturing?`■ SAVE (${captureSeconds}s)`:'⏺ EXPORT'}
-        </button>
-      </div>
+        {/* Footer */}
+        <div style={{marginTop:12, fontSize:8, color:C.textDim, letterSpacing:1, lineHeight:2}}>
+          LIBRARY PERSISTS IN BROWSER · DRAG AMBER HANDLES TO CROP · EACH COLUMN SUMS TO 100% · EXPORT CAPTURES OUTPUT AS WAV
+        </div>
 
-      {/* Info */}
-      {isPlaying&&(
-        <div style={{display:'flex',gap:16,marginBottom:12,fontSize:11,color:C.textDim}}>
-          <span>STEP <span style={{color:C.accent}}>{currentStep+1}</span>/{numSteps}</span>
-          <span>SLICE <span style={{color:C.warm}}>{lastPickedSlice+1}</span>/{numSlices}</span>
-        </div>
-      )}
-
-      {/* Grid */}
-      <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:8,padding:12,overflowX:'auto'}}>
-        <div style={{fontSize:10,color:C.textDim,marginBottom:8,letterSpacing:1}}>
-          PROBABILITY MATRIX — ROWS = SLICES • COLUMNS = STEPS • COLUMNS AUTO-NORMALIZE TO 100%
-        </div>
-        {/* Step number header row */}
-        <div style={{display:'flex',gap:2,marginBottom:4,paddingLeft:38}}>
-          {Array.from({length:numSteps}).map((_,step)=>(
-            <div key={step} style={{
-              width:numSteps>16?18:24,minWidth:numSteps>16?18:24,textAlign:'center',fontSize:9,
-              color:currentStep===step?C.accent:C.textDim,
-              fontWeight:currentStep===step?700:400,
-              marginLeft:numSteps>16&&step===16?8:0,
-            }}>{step+1}</div>
-          ))}
-        </div>
-        {/* Slice rows */}
-        {Array.from({length:numSlices}).map((_,slice)=>(
-          <div key={slice} style={{display:'flex',gap:2,alignItems:'center',marginBottom:2}}>
-            <div style={{width:34,minWidth:34,textAlign:'right',paddingRight:6,fontSize:10,color:C.warm,fontWeight:500}}>
-              S{slice+1}
-            </div>
-            {grid.map((row,step)=>{
-              const prob=row[slice];
-              const isActiveCell=currentStep===step&&lastPickedSlice===slice;
-              return (
-                <div key={step} onClick={()=>setCellProb(step,slice)} style={{
-                  width:numSteps>16?18:24,minWidth:numSteps>16?18:24,height:24,background:heatColor(prob),
-                  border:`1px solid ${isActiveCell?C.accent:prob>0?C.accent+'33':C.border}`,
-                  borderRadius:3,cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',
-                  fontSize:8,color:prob>0.5?'#fff':C.textDim,fontWeight:prob>0.8?700:400,userSelect:'none',
-                  boxShadow:currentStep===step?`inset 0 0 0 1px ${C.accent}22`:'none',
-                  marginLeft:numSteps>16&&step===16?8:0,
-                }}>
-                  {prob>0.005?Math.round(prob*100):''}
-                </div>
-              );
-            })}
-          </div>
-        ))}
-        {/* REV row at bottom */}
-        <div style={{display:'flex',gap:2,alignItems:'center',marginTop:6,paddingTop:6,borderTop:`1px solid ${C.border}`}}>
-          <div style={{width:34,minWidth:34,textAlign:'right',paddingRight:6,fontSize:10,color:C.textDim}}>
-            REV
-          </div>
-          {Array.from({length:numSteps}).map((_,step)=>(
-            <div key={step} onClick={()=>toggleReverse(step)} style={{
-              width:numSteps>16?18:24,minWidth:numSteps>16?18:24,height:24,background:reverse[step]?C.accentDim:'transparent',
-              border:`1px solid ${reverse[step]?C.accent+'66':C.border}`,borderRadius:3,cursor:'pointer',
-              display:'flex',alignItems:'center',justifyContent:'center',fontSize:10,
-              color:reverse[step]?C.accent:C.textDim,userSelect:'none',
-              marginLeft:numSteps>16&&step===16?8:0,
-            }}>
-              {reverse[step]?'◄':''}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div style={{marginTop:16,fontSize:10,color:C.textDim,lineHeight:1.6,maxWidth:600}}>
-        Your loop library is saved in this browser and persists between sessions.
-        Add breaks via LIBRARY or LOAD BREAKS. Drag cyan handles to crop.
-        Each probability row sums to 100%. EXPORT captures output as .wav.
       </div>
     </div>
   );
